@@ -1,0 +1,28 @@
+{
+    "taskTitle": "Single choice Task",
+    "taskDescription": "Select the correct awnser",
+    "tasks:": [
+        {
+            "id": "11111111-1111-1111-1111-3f49b1ef61b6",
+            "title": "Deine Mudda",
+            "choices": [
+                {
+                    "id": "11111111-1111-1111-2222-3f49b1ef61b6",
+                    "text": "A"
+                },
+                {
+                    "id": "11111111-1111-1111-3333-3f49b1ef61b6",
+                    "text": "B"
+                },
+                {
+                    "id": "11111111-1111-1111-4444-3f49b1ef61b6",
+                    "text": "C"
+                }
+            ]
+        }
+    ],
+    "solution": {
+        "taskId": "11111111-1111-1111-1111-3f49b1ef61b6",
+        "rightChoiceId": "11111111-1111-1111-2222-3f49b1ef61b6"
+    }
+}
