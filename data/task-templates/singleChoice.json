@@ -1,28 +1,30 @@
 {
     "taskTitle": "Single choice Task",
-    "taskDescription": "Select the correct awnser",
+    "taskDescription": "Select the correct awnser.",
     "tasks:": [
         {
-            "id": "11111111-1111-1111-1111-3f49b1ef61b6",
-            "title": "Deine Mudda",
+            "id": "6c84fb90-12c4-11e1-840d-7b25c5ee775a",
+            "title": "Deine Mudda <...>",
             "choices": [
                 {
-                    "id": "11111111-1111-1111-2222-3f49b1ef61b6",
-                    "text": "A"
+                    "id": "4838dd61-677c-4bd5-9c2e-2b92f4850bd9",
+                    "text": "ist fett."
                 },
                 {
-                    "id": "11111111-1111-1111-3333-3f49b1ef61b6",
-                    "text": "B"
+                    "id": "89441a04-8908-435b-a9bc-2ed77a01d296",
+                    "text": "ist intelligent."
                 },
                 {
-                    "id": "11111111-1111-1111-4444-3f49b1ef61b6",
-                    "text": "C"
+                    "id": "4f43cb44-5c12-493f-b3ad-070239ceffdb",
+                    "text": "ist wirklich deine Mutter. ;)"
                 }
             ]
         }
     ],
-    "solution": {
-        "taskId": "11111111-1111-1111-1111-3f49b1ef61b6",
-        "rightChoiceId": "11111111-1111-1111-2222-3f49b1ef61b6"
-    }
+    "taskSolutions": [
+        {
+            "taskId": "6c84fb90-12c4-11e1-840d-7b25c5ee775a",
+            "solution": "4f43cb44-5c12-493f-b3ad-070239ceffdb"
+        }
+    ]
 }
