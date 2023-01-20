@@ -1,9 +1,17 @@
 <template>
     <v-container>
-        <v-card max-width="750px" class="ma-auto">
+        <v-card max-width="750px" class="ma-auto" variant="tonal">
             <v-card-title>ITM Deutsch Lernportal</v-card-title>
-            <v-card-text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</v-card-text>
-            <v-card-actions><v-spacer></v-spacer><v-btn to="/test" append-icon="mdi-cannabis">Test</v-btn></v-card-actions>
+            <v-card-text>
+                Welcome to best German Learning Portal of World!
+                Here can you everything learn about German.
+                Have fun!
+            </v-card-text>
+            <v-card-actions>
+              <v-spacer></v-spacer>
+              <ExerciseExternalLink url="https://www.google.com/" title="Google"></ExerciseExternalLink>
+              <v-spacer></v-spacer>
+            </v-card-actions>
         </v-card>
     </v-container>
 </template>
