@@ -67,6 +67,11 @@ export default {
                 icon: 'mdi-account-supervisor',
                 url: '/pronomen'
               },
+              {
+                title: 'Nicht flektierbare Wortarten',
+                icon: 'mdi-link',
+                url: '/nicht-flektierbare-wortarten'
+              }
             ]
         }
     }
