@@ -15,7 +15,7 @@ export default {
               {
                 title: 'Kommasetzung',
                 icon: 'mdi-comma',
-                url: '/kommazetzung'
+                url: '/kommasetzung'
               },
               {
                 title: 'Das/Dass',
