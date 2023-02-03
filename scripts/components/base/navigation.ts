@@ -69,7 +69,7 @@ export default {
               },
               {
                 title: 'Nicht flektierbare Wortarten',
-                icon: 'mdi-link',
+                icon: 'mdi-autorenew-off',
                 url: '/nicht-flektierbare-wortarten'
               }
             ]
