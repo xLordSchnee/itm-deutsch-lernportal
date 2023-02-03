@@ -1,6 +1,6 @@
 {
     "taskTitle": "Example task",
-    "taskTitle": "Complete this example task.",
+    "taskDescription": "Complete this example task.",
     "tasks": [
         {
             "id": "singleChoice",
