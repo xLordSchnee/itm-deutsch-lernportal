@@ -1,0 +1,86 @@
+{
+    "taskTitle": "Example task",
+    "taskDescription": "Complete this example task.",
+    "tasks": [
+        {
+            "id": "singleChoice",
+            "title": "Deine Mudda <...>",
+            "choices": [
+                {
+                    "id": "guidv4",
+                    "text": "ist fett.",
+                    "rightChoice": false
+                },
+                {
+                    "id": "guidv4",
+                    "text": "ist intelligent.",
+                    "rightChoice": false
+                },
+                {
+                    "id": "guidv4",
+                    "text": "ist wirklich deine Mutter. ;)",
+                    "rightChoice": true
+                }
+            ],
+            "hint": ""
+        },
+        {
+            "id": "multipleChoice",
+            "title": "1 + 1 = <...>",
+            "choices": [
+                {
+                    "id": "guidv4",
+                    "text": "mathe.",
+                    "rightChoice": true
+                },
+                {
+                    "id": "guidv4",
+                    "text": "69.",
+                    "rightChoice": false
+                },
+                {
+                    "id": "guidv4",
+                    "text": "2.",
+                    "rightChoice": true
+                }
+            ],
+            "hint": ""
+        },
+        {
+            "id": "gapText",
+            "title": "",
+            "gaps": [
+                "In {{1}} ist es kälter als am {{2}}"
+            ],
+            "choices": [
+                {
+                    "1": "Deutschland"
+                },
+                {
+                    "2": "Equator"
+                }
+            ],
+            "hint": "Deutschland ist immer kalt"
+        },
+        {
+            "id": "gapTextSorting",
+            "title": "Sotiere nach richtiger Reihenfolge",
+            "choices": [
+                {
+                    "title": "Position 1",
+                    "position": 0
+                },
+                {
+                    "title": "Position 2",
+                    "position": 1
+                }
+                ,
+                {
+                    "title": "Position 3",
+                    "position": 2
+                }
+            ],
+            "hint": "Sotiere ASC"
+        }
+    ]
+}

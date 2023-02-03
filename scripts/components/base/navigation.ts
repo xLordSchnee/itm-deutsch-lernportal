@@ -15,7 +15,7 @@ export default {
               {
                 title: 'Kommasetzung',
                 icon: 'mdi-comma',
-                url: '/kommazetzung'
+                url: '/kommasetzung'
               },
               {
                 title: 'Das/Dass',
@@ -67,6 +67,11 @@ export default {
                 icon: 'mdi-account-supervisor',
                 url: '/pronomen'
               },
+              {
+                title: 'Nicht flektierbare Wortarten',
+                icon: 'mdi-autorenew-off',
+                url: '/nicht-flektierbare-wortarten'
+              }
             ]
         }
     }
