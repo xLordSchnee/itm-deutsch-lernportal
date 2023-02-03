@@ -5,6 +5,7 @@
         {
             "id": "singleChoice",
             "title": "Deine Mudda <...>",
+            "type": 0,
             "choices": [
                 {
                     "id": "guidv4",
@@ -27,6 +28,7 @@
         {
             "id": "multipleChoice",
             "title": "1 + 1 = <...>",
+            "type": 1,
             "choices": [
                 {
                     "id": "guidv4",
@@ -49,6 +51,7 @@
         {
             "id": "gapText",
             "title": "",
+            "type": 2,
             "gaps": [
                 "In {{1}} ist es kälter als am {{2}}"
             ],
@@ -65,6 +68,7 @@
         {
             "id": "gapTextSorting",
             "title": "Sotiere nach richtiger Reihenfolge",
+            "type": 3,
             "choices": [
                 {
                     "title": "Position 1",
