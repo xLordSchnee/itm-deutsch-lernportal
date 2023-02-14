@@ -4,6 +4,7 @@
     "tasks": [
         {
             "id": "singleChoice",
+            "type": "single",
             "title": "Deine Mudda <...>",
             "type": 0,
             "choices": [
@@ -27,6 +28,7 @@
         },
         {
             "id": "multipleChoice",
+            "type": "multiple",
             "title": "1 + 1 = <...>",
             "type": 1,
             "choices": [
@@ -37,7 +39,7 @@
                 },
                 {
                     "id": "guidv4",
-                    "text": "69.",
+                    "text": "69 hihihi.",
                     "rightChoice": false
                 },
                 {
@@ -50,6 +52,7 @@
         },
         {
             "id": "gapText",
+            "type": "gap",
             "title": "",
             "type": 2,
             "gaps": [

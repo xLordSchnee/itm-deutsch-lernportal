@@ -4,7 +4,16 @@
 
 <script>
 export default {
-  name: "gap-text"
+  name: "gap-text",
+  props: {
+    task: {
+      default: Object,
+      type: Object
+    }
+  },
+  methods: {
+
+  }
 }
 </script>
 

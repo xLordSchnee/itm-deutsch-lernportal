@@ -23,10 +23,8 @@
   </v-container>
 </template>
 
-<script>
-export default {
-  name: "index"
-}
+<script setup>
+import exercise from "../../data/task-templates/dasDass.json";
 </script>
 
 <style scoped>
