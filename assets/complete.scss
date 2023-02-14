@@ -1,0 +1,13 @@
+.Content {
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+
+  .video {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 10%;
+  }
+}

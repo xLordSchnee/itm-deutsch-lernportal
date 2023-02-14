@@ -1,19 +1,45 @@
 <template>
-    <v-container class="mx-auto" style="max-width:750px;">
-        <v-card>
-            <v-card-title>Rechtschreibung</v-card-title>
-            <v-card-text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</v-card-text>
-            <v-card-actions><v-spacer></v-spacer><v-btn to="/" append-icon="mdi-fruit-cherries">Home</v-btn></v-card-actions>
-        </v-card>
-    </v-container>
+  <v-container class="mx-auto" style="max-width:750px;">
+    <v-card>
+      <v-card-title>Thema Rechtschreibung</v-card-title>
+      <v-card-text class="Content">
+        beschreibung
+        <div class="video">
+          <ExerciseExternalLink url="https://www.google.com" title="google"></ExerciseExternalLink>
+        </div>
+      </v-card-text>
+    </v-card>
+
+    <!--    <img class="img_rick" src="assets/Rick.png" height="300px"/>-->
+  </v-container>
 </template>
 
 <script>
+import MultipleChoice from "../../components/exercise/multiple-choice";
+import GapText from "../../components/exercise/gap-text";
+import SingleChoice from "../../components/exercise/single-choice";
+import ExternalLink from "../../scripts/components/exercise/external-link";
 export default {
-    name: 'Index'
+  name: "index",
+  data() {
+    return {
+      exercise: {
+        default: Object,
+        type: Object
+      }
+    }
+  },
+  mounted() {
+    this.getExercise()
+  },
+  methods: {
+    getExercise() {
+      //TODO: get exercise-object from json & save object to exercise
+    }
+  }
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>
