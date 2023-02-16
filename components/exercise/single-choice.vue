@@ -19,14 +19,14 @@
         <v-radio :label="item.text" :value="item.id" @click="setClicked(item)"></v-radio>
       </v-for>
     </v-radio-group>
-    <v-container v-if="!lastPage">
-      <v-btn variant="success" @click="submit">Submit</v-btn>
+    <v-container>
+      <v-btn color="success" @click="submit">Submit</v-btn>
     </v-container>
   </div>
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted  } from "vue";
 const props = defineProps({
   task: Object,
   lastPage: Boolean,

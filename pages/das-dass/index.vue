@@ -15,56 +15,61 @@
         <v-card-title>{{ Exercise.taskTitle }}</v-card-title>
         <v-card-text>{{ Exercise.taskDescription }}</v-card-text>
         <div v-if="exerciseFinished || !results">
-          Results 
+          Results
         </div>
         <div v-else>
-          <v-card-text>
-            <div v-if="Exercise.tasks[page - 1].type == 0">
+          <v-card-text v-if="!loading">
+            <template v-if="Exercise.tasks[page - 1].type == 0">
               Single Choice
               <SingleChoice :task="Exercise.tasks[page - 1]" :lastPage="page + 1 > Exercise.tasks.length"
-                :callback="(correct) => submit(correct)"></SingleChoice>
-            </div>
-            <div v-else-if="Exercise.tasks[page - 1].type == 1">
+                :callback="(correct) => submit(correct)">
+              </SingleChoice>
+            </template>
+            <template v-else-if="Exercise.tasks[page - 1].type == 1">
               MultipleChoice
               <MultipleChoice :task="Exercise.tasks[page - 1]" :lastPage="page + 1 > Exercise.tasks.length"
                 :callback="(correct) => submit(correct)"></MultipleChoice>
-            </div>
-            <div v-else-if="Exercise.tasks[page - 1].type == 2">
+            </template>
+            <template v-else-if="Exercise.tasks[page - 1].type == 2">
               Gap Text
               <GapText :task="Exercise.tasks[page - 1]" :lastPage="page + 1 > Exercise.tasks.length"
                 :callback="(correct) => submit(correct)"></GapText>
-            </div>
-            <div v-else-if="Exercise.tasks[page - 1].type == 3">
+            </template>
+            <template v-else-if="Exercise.tasks[page - 1].type == 3">
               Gap Sorting
               <GapText :task="Exercise.tasks[page - 1]" :lastPage="page + 1 > Exercise.tasks.length"
                 :callback="(correct) => submit(correct)"></GapText>
-            </div>
-            <div v-else>
+            </template>
+            <template v-else>
               Error
-            </div>
+            </template>
+          </v-card-text>
+          <v-card-text v-else>
+            Loading...
           </v-card-text>
           <v-container v-if="page + 1 > Exercise.tasks.length">
-            <v-btn variant="success" @click="finishExercise">Finish Exercise</v-btn>
+            <v-btn color="success" @click="finishExercise">Finish Exercise</v-btn>
           </v-container>
         </div>
       </v-card>
       <!--    <img class="img_rick" src="assets/Rick.png" height="300px"/>-->
     </v-container>
-    <v-container class="pagination-container">
-      <v-pagination class="pagination" v-model="page" :length="Exercise.tasks.length"></v-pagination>
+    <v-container class="pagination-container" v-if="Exercise.tasks.length >= 2">
+      <v-pagination class="pagination" v-model="page" :length="Exercise.tasks.length" :total-visible="5"></v-pagination>
     </v-container>
   </div>
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 import SingleChoice from "../../components/exercise/single-choice";
 import MultipleChoice from "../../components/exercise/multiple-choice";
 import GapText from "../../components/exercise/gap-text";
 
 import Exercise from "../../data/task-templates/dasDass.json"
 
-const page = ref(5);
+const loading = ref(true);
+const page = ref(Exercise.tasks.length);
 const exerciseFinished = ref(false)
 const results = ref({});
 
@@ -84,6 +89,12 @@ function submit(awnser) {
   }
   page.value++;
 }
+onMounted(() => {
+  if (loading.value) {
+    page.value = 1;
+  }
+  loading.value = false;
+})
 </script>
 
 <style scoped>

@@ -13,18 +13,20 @@
       </v-dialog>
     </div>
 
-
     {{ props.task.title }}
-    <v-container>
-      {{ props.task.gaps}}
+    <v-container v-if="props.task.type == 2">
+      {{ props.task.gaps }}
       <v-for :key="key" v-for="(key, value) in props.task.choices">
         <div>
-          {{ value + 1 }}: <input type="text" placeholder="das/dass" v-model="awnsers[value]" />
+          {{ value + 1 }}: <input type="text" placeholder="das/dass" v-model="answers[value]" />
         </div>
       </v-for>
     </v-container>
-    <v-container v-if="!lastPage">
-      <v-btn variant="success" @click="submit">Submit</v-btn>
+    <v-container v-else-if="props.task.type == 3">
+      Sortierung!
+    </v-container>
+    <v-container>
+      <v-btn color="success" @click="submit">Submit</v-btn>
     </v-container>
   </div>
 </template>
@@ -37,10 +39,9 @@ const props = defineProps({
   callback: Function,
 });
 
-const awnsers = ref({});
+const answers = ref({});
 const error = ref(false);
 const errorMessage = ref("");
-
 
 
 function showError(message) {
@@ -48,12 +49,30 @@ function showError(message) {
   error.value = true;
 }
 
-function checkAwnser() {
-  
+function checkAnswer() {
+  if (Object.keys(answers.value).length != props.task.choices.length) {
+    showError("Bitte fülle alle Antwortmöglichkeiten aus.");
+    return 'error';
+  }
+
+  var isCorrect = true;
+
+  for (var i = 0; i < props.task.choices.length; i++) {
+    var choice = props.task.choices[i][i + 1].toLowerCase();
+    var answer = answers.value[i].toLowerCase();
+    console.log(choice, answer)
+    if (choice != answer) {
+      console.log(i + " ist falsch");
+      isCorrect = false;
+    }
+  }
+  return isCorrect;
 }
 
 function submit() {
-
+  var check = checkAnswer();
+  if (check == 'error') return;
+  props.callback(check);
 }
 </script>
 
