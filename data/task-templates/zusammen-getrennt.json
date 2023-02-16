@@ -67,7 +67,7 @@
             "hint": ""
         },
 		{
-            "id": "singleChoice",
+            "id": "775b7cf2-ebf6-4ee9-bb84-b4a20fbceffe",
             "title": "Was ist richtig?",
             "type": 0,
             "choices": [
@@ -85,7 +85,7 @@
             "hint": ""
         },
 		{
-            "id": "singleChoice",
+            "id": "268e37f6-586f-415b-805b-fb18c91cb920",
             "title": "Was ist richtig?",
             "type": 0,
             "choices": [

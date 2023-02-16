@@ -20,13 +20,13 @@
       </v-for>
     </v-radio-group>
     <v-container>
-      <v-btn color="success" @click="submit">Submit</v-btn>
+      <v-btn color="success" class="right-button" @click="submit">Submit</v-btn>
     </v-container>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted  } from "vue";
+import { ref, onBeforeUpdate  } from "vue";
 const props = defineProps({
   task: Object,
   lastPage: Boolean,
@@ -59,6 +59,10 @@ function submit() {
   if (check == 'error') return;
   props.callback(check);
 }
+
+onBeforeUpdate(() => {
+  clicked.value = null;
+})
 </script>
 
 <style scoped>

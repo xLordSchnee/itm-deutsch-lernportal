@@ -18,13 +18,13 @@
       <v-checkbox :label="item.text" :value="item.id" v-model="answers[item.id]" :true-value="true" :false-value="false"></v-checkbox>
     </v-for>
     <v-container>
-      <v-btn color="success" @click="submit">Submit</v-btn>
+      <v-btn color="success" class="right-button" @click="submit" >Submit</v-btn>
     </v-container>
   </div>
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, onBeforeUpdate } from "vue";
 const props = defineProps({
   task: Object,
   lastPage: Boolean,
@@ -75,6 +75,10 @@ function submit() {
   if (check == 'error') return;
   props.callback(check);
 }
+
+onBeforeUpdate(() => {
+  answers.value = preparedAnswers;
+})
 </script>
 
 <style scoped>

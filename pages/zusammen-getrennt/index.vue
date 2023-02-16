@@ -10,59 +10,138 @@
 
 <template>
   <div class="container">
+    <div class="text-center">
+      <v-dialog v-model="error" width="auto">
+        <v-card>
+          <v-card-text>
+            {{ errorMessage }}
+          </v-card-text>
+          <v-card-actions>
+            <v-btn color="primary" block @click="error = false">Close Dialog</v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
+    </div>
+
     <v-container class="mx-auto" style="max-width:750px;">
       <v-card>
         <v-card-title>{{ Exercise.taskTitle }}</v-card-title>
         <v-card-text>{{ Exercise.taskDescription }}</v-card-text>
-        <v-card-text>
-          <div v-if="Exercise.tasks[page - 1].type == 0">
-            Single Choice
-            <SingleChoice :task="Exercise.tasks[page - 1]" :lastPage="page + 1 > Exercise.tasks.length"
-              :callback="(correct) => submit(correct)"></SingleChoice>
-          </div>
-          <div v-else-if="Exercise.tasks[page - 1].type == 1">
-            MultipleChoice
-            <MultipleChoice :task="Exercise.tasks[page - 1]" :lastPage="page + 1 > Exercise.tasks.length"
-              :callback="(correct) => submit(correct)"></MultipleChoice>
-          </div>
-          <div v-else-if="Exercise.tasks[page - 1].type == 2">
-            Gap Text
-            <GapText :task="Exercise.tasks[page - 1]" :lastPage="page + 1 > Exercise.tasks.length"
-              :callback="(correct) => submit(correct)"></GapText>
-          </div>
-          <div v-else-if="Exercise.tasks[page - 1].type == 3">
-            Gap Sorting
-            <GapText :task="Exercise.tasks[page - 1]" :lastPage="page + 1 > Exercise.tasks.length"
-              :callback="(correct) => submit(correct)"></GapText>
-          </div>
-        </v-card-text>
-        <v-container v-if="page + 1 > Exercise.tasks.length">
-          <v-btn variant="success" @click="finishExercise">Finish Exercise</v-btn>
-        </v-container>
+        <div v-if="exerciseFinished">
+          <v-container>
+            <span v-html="resultText"></span>
+            <v-btn @click="this.$router.go(this.$router.currentRoute)" class="right-button" color="success">Neustart</v-btn>
+          </v-container>
+        </div>
+        <div v-else>
+          <v-card-text v-if="!loading">
+            <template v-if="Exercise.tasks[page - 1].type == 0">
+              <SingleChoice :task="Exercise.tasks[page - 1]" :lastPage="page + 1 > Exercise.tasks.length"
+                :callback="(correct) => submit(correct)">
+              </SingleChoice>
+            </template>
+            <template v-else-if="Exercise.tasks[page - 1].type == 1">
+              <MultipleChoice :task="Exercise.tasks[page - 1]" :lastPage="page + 1 > Exercise.tasks.length"
+                :callback="(correct) => submit(correct)"></MultipleChoice>
+            </template>
+            <template v-else-if="Exercise.tasks[page - 1].type == 2">
+              <GapText :task="Exercise.tasks[page - 1]" :lastPage="page + 1 > Exercise.tasks.length"
+                :callback="(correct) => submit(correct)"></GapText>
+            </template>
+            <template v-else-if="Exercise.tasks[page - 1].type == 3">
+              <GapText :task="Exercise.tasks[page - 1]" :lastPage="page + 1 > Exercise.tasks.length"
+                :callback="(correct) => submit(correct)"></GapText>
+            </template>
+            <template v-else>
+              Error
+            </template>
+          </v-card-text>
+          <v-card-text v-else>
+            Loading...
+          </v-card-text>
+          <v-container v-if="allTaskCompleted">
+            <v-btn color="danger" @click="page = 1">Aufgaben erneut angucken</v-btn>
+            <v-btn color="warning" @click="finishExercise">Finish Exercise</v-btn>
+          </v-container>
+        </div>
       </v-card>
-
       <!--    <img class="img_rick" src="assets/Rick.png" height="300px"/>-->
     </v-container>
-    <v-container class="pagination-container">
-      <v-pagination class="pagination" v-model="page" :length="Exercise.tasks.length"></v-pagination>
+    <v-container class="pagination-container" v-if="Exercise.tasks.length >= 2 && !exerciseFinished">
+      <v-pagination class="pagination" v-model="page" :length="Exercise.tasks.length" :total-visible="5"></v-pagination>
     </v-container>
   </div>
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 import SingleChoice from "../../components/exercise/single-choice";
 import MultipleChoice from "../../components/exercise/multiple-choice";
 import GapText from "../../components/exercise/gap-text";
 
 import Exercise from "../../data/task-templates/zusammen-getrennt.json"
 
-const page = ref(1);
+const loading = ref(true);
+const allTaskCompleted = ref(false);
+const page = ref(Exercise.tasks.length);
+const exerciseFinished = ref(false)
+const results = ref({});
+const resultText = ref('');
+const error = ref(false);
+const errorMessage = ref("");
 
-function submit(awnser) {
-  console.log("Submit called", awnser)
-  page.value++;
+
+function showError(message) {
+  errorMessage.value = message;
+  error.value = true;
 }
+
+
+function finishExercise() {
+  //check if all tasks has been completed
+  if (Object.keys(results.value).length == Exercise.tasks.length) {
+    showResults();
+  } else {
+    showError("Nicht alle Aufgbaben sind erledigt!");
+    return;
+  }
+}
+
+function showResults() {
+  var text = "";
+  for (var resultKey in results.value) {
+    var result = results.value[resultKey];
+    var string = "Seite " + (result.page) + ": ";
+    var isCorrect = (result.wasCorrect) ? "Richtig" : "Falsch";
+    string += isCorrect + "<br>";
+    text += string + "\n";
+  }
+
+  resultText.value = text;
+  exerciseFinished.value = true;
+}
+
+function submit(answer) {
+  var task = Exercise.tasks[page.value - 1];
+  results.value[task.id] = {
+    id: task.id,
+    page: page.value,
+    wasCorrect: answer,
+    task: task
+  }
+  if (Object.keys(results.value).length == Exercise.tasks.length) {
+    allTaskCompleted.value = true;
+  } else {
+    page.value++;
+  }
+  
+}
+onMounted(() => {
+  if (loading.value) {
+    page.value = 1;
+  }
+  loading.value = false;
+})
 </script>
 
 <style scoped>
@@ -73,6 +152,11 @@ function submit(awnser) {
 .pagination-container {
   display: flex;
   justify-content: center;
+  z-index: 9999;
+}
+
+.pagination-container * {
+  z-index: 9999;
 }
 
 .pagination {

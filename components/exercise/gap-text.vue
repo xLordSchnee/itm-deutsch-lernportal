@@ -30,7 +30,7 @@
       </v-for>
     </v-container>
     <v-container>
-      <v-btn color="success" @click="submit">Submit</v-btn>
+      <v-btn color="success" class="right-button" @click="submit">Submit</v-btn>
     </v-container>
   </div>
 </template>
@@ -114,6 +114,7 @@ onMounted(() => {
 })
 
 onBeforeUpdate(() => {
+  answers.value = {};
   if (props.task.type == 3) {
     props.task.choices = shuffle(props.task.choices);
   }
