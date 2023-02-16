@@ -20,13 +20,13 @@
         </div>
 
         <div class="info">
-          <img class="bubble" src="../assets/Gedankenblase.png">
+          <img class="bubble" src="~/public/assets/Gedankenblase.png">
            <p class="text-rick">
              Willkommen im besten Deutschlernportal der Welt!
              Hier kannst du alles über Deutsch lernen.
              Viel Spaß dabei!
            </p>
-          <img class="rick" src="../assets/Rick.png">
+          <img class="rick" src="~/public/assets/Rick.png">
 
         </div>
 
