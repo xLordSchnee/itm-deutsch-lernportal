@@ -1,12 +1,18 @@
+<!--<v-card>-->
+<!--<v-card-title>Thema Konjunktiv Leonie Ulrichs und Marcel Probst</v-card-title>-->
+<!--<v-card-text class="Content">-->
+<!--  beschreibung-->
+<!--<img src="../../assets/konjunktiv.png">-->
+<!--  </div>-->
+<!--</v-card-text>-->
+<!--</v-card>-->
+
 <template>
   <v-container class="mx-auto" style="max-width:750px;">
     <v-card>
       <v-card-title>Thema Konjunktiv</v-card-title>
       <v-card-text class="Content">
-        beschreibung
-        <div class="video">
-          <ExerciseExternalLink url="https://www.google.com" title="google"></ExerciseExternalLink>
-        </div>
+
       </v-card-text>
     </v-card>
 

@@ -1,3 +1,13 @@
+<!--<v-card>-->
+<!--<v-card-title>Thema Dass-Dass Leon Decker</v-card-title>-->
+<!--<v-card-text class="Content">-->
+<!--  beschreibung-->
+<!--  <div class="video">-->
+<!--    <ExerciseExternalLink url="https://youtu.be/7ehiHejhjWk" title="Das als Artikel"></ExerciseExternalLink>-->
+<!--  </div>-->
+<!--</v-card-text>-->
+<!--</v-card>-->
+
 <template>
   <div class="container">
     <v-container class="mx-auto" style="max-width:750px;">
