@@ -1,0 +1,114 @@
+{
+    "taskTitle": "Sprachbezeichnungen als Adjektive oder Substantive",
+    "taskDescription": "Sprachbezeichnungen, die als Adjektive verwendet werden, werden kleingeschrieben, wenn sie mit der Frage 'Wie?' beschrieben werden können. Wenn die Sprachbezeichnung als Substantiv verwendet wird und mit den Fragen 'Was?' oder 'Wovon?' oder 'Worin?' beschrieben werden kann, wird sie großgeschrieben. Sie werden auch großgeschrieben nach Präpositionen.",
+    "tasks": [
+        {
+            "id": "460986ee-a3a8-4d63-ba2a-e3abe8834433",
+            "type": 0,
+            "title": "Ich spreche fließend DEUTSCH",
+            "choices": [
+                {
+                    "id": "6fbf8241-587c-4054-8b71-ee5398a8ec6f",
+                    "text": "Substantiv",
+                    "rightChoice": true
+                },
+                {
+                    "id": "aa4d8622-cfe8-49aa-9b44-04b20e8d8f9d",
+                    "text": "Adjektiv",
+                    "rightChoice": false
+                }
+            ],
+            "hint": ""
+        },
+        {
+            "id": "a9eb3a4c-db43-4b23-92c8-cfd39fa5d8ac",
+            "title": "Ich kann nur ein bisschen FRANZÖSISCH",
+            "type": 0,
+            "choices": [
+                {
+                    "id": "2a9deb41-e6d1-4f71-a064-5c949b062446",
+                    "text": "Substantiv",
+                    "rightChoice": true
+                },
+                {
+                    "id": "19b14eeb-45ee-49f8-87da-5766fe1842af",
+                    "text": "Adjektiv",
+                    "rightChoice": false
+                }
+            ],
+            "hint": ""
+        },
+        {
+            "id": "c5469ecf-eb3d-413d-a130-62746cad0694",
+            "title": "Ich habe einen SCHWEDISCHEN Akzent ",
+            "type": 0,
+            "choices": [
+                {
+                    "id": "fe8f6219-ff81-4b01-8fc1-a33b0564d59a",
+                    "text": "Substantiv",
+                    "rightChoice": false
+                },
+                {
+                    "id": "29af040f-0385-41cc-b8d1-43b77b4be282",
+                    "text": "Adjektiv",
+                    "rightChoice": true
+                }
+            ],
+            "hint": ""
+        },
+        {
+            "id": "6c53e4e1-6db2-4203-8f56-79a203c38e09",
+            "title": "Sie hat einen _______ Akzent",
+            "type": 0,
+            "choices": [
+                {
+                    "id": "39d35d0c-f4ef-494f-b91a-3f76e6b0bf47",
+                    "text": "Deutschen",
+                    "rightChoice": false
+                },
+                {
+                    "id": "ed201384-4c9d-43ae-8a9f-3beb1213a6b8",
+                    "text": "deutschen",
+                    "rightChoice": true
+                }
+            ],
+            "hint": ""
+        },
+        {
+            "id": "83619c65-502a-42d0-becc-b9b321b5c175",
+            "title": "Ich gucke viele ______ Filme ",
+            "type": 0,
+            "choices": [
+                {
+                    "id": "d9d89971-da6f-4457-a86a-68d1b91e3950",
+                    "text": "Koreanische",
+                    "rightChoice": false
+                },
+                {
+                    "id": "e241ad69-b3ee-4b63-83f0-a432f9192091",
+                    "text": "koreanische",
+                    "rightChoice": true
+                }
+            ],
+            "hint": ""
+        },
+        {
+            "id": "4e81c2eb-34b0-428e-9cab-d419cc8b5565",
+            "title": "Sein _____ ist ziemlich gut",
+            "type": 0,
+            "choices": [
+                {
+                    "id": "9ea64fbb-6fa6-4762-aa59-d42146c0b493",
+                    "text": "Deutsch",
+                    "rightChoice": true
+                },
+                {
+                    "id": "5d2d1a69-ec97-456c-bf1f-5851d1c61dc8",
+                    "text": "deutsch",
+                    "rightChoice": false
+                }
+            ],
+            "hint": ""
+        }
+    ]
+}

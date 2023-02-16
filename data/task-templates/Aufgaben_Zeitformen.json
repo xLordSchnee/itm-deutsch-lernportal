@@ -1,0 +1,388 @@
+{
+    "taskTitle": "Zeitformen",
+    "taskDescription": "Übungsaufgaben zu den Zeitformen",
+    "tasks": [
+        {
+            "id": "cef918c3-a55d-443a-b356-ad552d473ec5",
+            "type": 0,
+            "title": "Welche Zeitform wird verwendet, um eine Handlung auszudrücken, die in der Vergangenheit stattgefunden hat und abgeschlossen ist?",
+            "choices": [
+                {
+                    "id": "18bb8de3-4405-49a9-a216-f65b3a1b9370",
+                    "text": "Präteritum",
+                    "rightChoice": true
+                },
+                {
+                    "id": "43dc8257-da03-44c1-bcd3-17da071b3530",
+                    "text": "Präsens",
+                    "rightChoice": false
+                },
+                {
+                    "id": "388de844-dedb-453b-a8ca-bec5ea279574",
+                    "text": "Futur I",
+                    "rightChoice": false
+                }
+            ],
+            "hint": ""
+        },
+        {
+            "id": "b8593da4-d6e7-4dd4-9193-3b4aa6fed30c",
+            "type": 0,
+            "title": "Welche der folgenden Sätze verwendet die richtige Zeitform für Perfekt?",
+            "choices": [
+                {
+                    "id": "87bf1b50-0945-46e2-8576-3f2352f49f49",
+                    "text": "Ich gehe jeden Abend ins Kino.",
+                    "rightChoice": false
+                },
+                {
+                    "id": "b18e3b8b-0856-4a82-b04e-849c595e7218",
+                    "text": "Ich bin seit einem Monat arbeitslos.",
+                    "rightChoice": true
+                },
+                {
+                    "id": "6052f786-2026-4908-b560-8e387062cde7",
+                    "text": "Ich werde nächste Woche in den Urlaub fahren.",
+                    "rightChoice": false
+                }
+            ],
+            "hint": ""
+        },
+        {
+            "id": "46df9468-fa06-42f0-947f-40a2a430c9fb",
+            "type": 0,
+            "title": "Welche Zeitform wird verwendet, um eine Handlung auszudrücken, die im Moment passiert?",
+            "choices": [
+                {
+                    "id": "07d238e3-28c7-44c0-a499-70dc93f09ce1",
+                    "text": "Präteritum",
+                    "rightChoice": false
+                },
+                {
+                    "id": "96db2948-6cbd-454e-b2a4-56ffade7a481",
+                    "text": "Präsens",
+                    "rightChoice": true
+                },
+                {
+                    "id": "d74e7421-88a7-4beb-bdec-32b9c1dd892f",
+                    "text": "Perfekt",
+                    "rightChoice": false
+                }
+            ],
+            "hint": ""
+        },
+        {
+            "id": "128c82d3-3308-41c6-8d20-9c3f34878f24",
+            "type": 0,
+            "title": "Welche der folgenden Sätze verwendet die richtige Zeitform für Präsens?",
+            "choices": [
+                {
+                    "id": "16a6b71b-5654-41fb-8bbc-08d56d24959c",
+                    "text": "Ich habe gestern Abend ein Buch gelesen.",
+                    "rightChoice": false
+                },
+                {
+                    "id": "ff6b0be7-cf24-4ef6-8f68-266b2ceacf60",
+                    "text": "Ich werde heute Abend ein Buch lesen.",
+                    "rightChoice": false
+                },
+                {
+                    "id": "bbc80a58-b11b-42cc-a5a5-b55adbae4122",
+                    "text": "Ich lese gerade ein Buch.",
+                    "rightChoice": true
+                }
+            ],
+            "hint": ""
+        },
+        {
+            "id": "3a21c2e8-9097-42c0-8f2a-a87e10028357",
+            "type": 0,
+            "title": "Welche Zeitform wird verwendet, um eine wiederkehrende Handlung auszudrücken?",
+            "choices": [
+                {
+                    "id": "58298bf4-de75-4f7d-9c83-37fe41266947",
+                    "text": "Präteritum",
+                    "rightChoice": false
+                },
+                {
+                    "id": "86c73713-67a0-42a3-9bf4-e371551219b6",
+                    "text": "Präsens",
+                    "rightChoice": true
+                },
+                {
+                    "id": "2c995467-b9d7-44d6-ab62-133f757d5b1b",
+                    "text": "Plusquamperfekt",
+                    "rightChoice": false
+                }
+            ],
+            "hint": ""
+        },
+        {
+            "id": "5ba007c5-9a7c-44f9-ab16-2673fd0b4622",
+            "type": 0,
+            "title": "Welche Zeitform wird verwendet, um eine Handlung auszudrücken, die in der Vergangenheit begonnen hat und bis zur Gegenwart andauert oder abgeschlossen ist?",
+            "choices": [
+                {
+                    "id": "24fb0a0c-4a8e-4ee6-a8bb-9feb42a42dee",
+                    "text": "Präteritum",
+                    "rightChoice": false
+                },
+                {
+                    "id": "f8c83e02-8b31-4c51-b482-fc8bb524afef",
+                    "text": "Perfekt",
+                    "rightChoice": true
+                },
+                {
+                    "id": "af156d68-a278-46f2-b7bf-70d0f9613663",
+                    "text": "Futur II",
+                    "rightChoice": false
+                }
+            ],
+            "hint": ""
+        },
+        {
+            "id": "deac1ec3-a3b2-49c9-8ed5-c1fa1368733d",
+            "type": 1,
+            "title": "Welcher der folgenden Sätze verwendet die Zeitform Präsens?",
+            "choices": [
+                {
+                    "id": "6d6f7799-6eda-4f17-a79c-d3022e8d4275",
+                    "text": "Ich bin gestern Bergsteigen gegangen.",
+                    "rightChoice": false
+                },
+                {
+                    "id": "9a779b64-8b5b-4c04-acb9-639282d94978",
+                    "text": "Ich esse jetzt Pizza.",
+                    "rightChoice": true
+                },
+                {
+                    "id": "01a480db-dc1e-4198-8031-2f485c487709",
+                    "text": "Ich werde morgen mit dem Auto zur Arbeit fahren.",
+                    "rightChoice": false
+                },
+                {
+                    "id": "3f8ee1ab-3e2b-4c93-b445-78e543c85e1b",
+                    "text": "Ich fahre gerade Fahrrad.",
+                    "rightChoice": true
+                }
+            ],
+            "hint": ""
+        },
+        {
+            "id": "d5fe402e-9a36-4cb4-88a0-56c39918aa5f",
+            "type": 0,
+            "title": "Welche der folgenden Sätze verwendet die richtige Zeitform für Präteritum?",
+            "choices": [
+                {
+                    "id": "a9f3b062-2097-4105-b2dd-f8a2866891d0",
+                    "text": "Ich werde gestern Abend ins Kino gehen.",
+                    "rightChoice": false
+                },
+                {
+                    "id": "d5bced34-689f-463d-8c40-bae5fb9ad010",
+                    "text": "Ich ging gestern Abend ins Kino.",
+                    "rightChoice": true
+                },
+                {
+                    "id": "7ded9aa8-a0e7-459d-be8f-9082941a5480",
+                    "text": "Ich gehe heute Abend ins Kino.",
+                    "rightChoice": false
+                }
+            ],
+            "hint": ""
+        },
+        {
+            "id": "943af144-a8ea-48cc-9cd2-53dae9b8a652",
+            "type": 0,
+            "title": "Welche der folgenden Sätze verwendet die richtige Zeitform für Präsens?",
+            "choices": [
+                {
+                    "id": "42f7ca9b-f455-4a10-a393-e6743ffe34bc",
+                    "text": "Ich werde morgen früh aufstehen.",
+                    "rightChoice": false
+                },
+                {
+                    "id": "4cfc9128-7ce6-4196-a2d1-07aa4795afff",
+                    "text": "Ich stehe jeden Morgen um 6 Uhr auf.",
+                    "rightChoice": true
+                },
+                {
+                    "id": "26c64a87-e36a-41dc-a756-3922e35f096f",
+                    "text": "Ich bin gestern früh aufgestanden.",
+                    "rightChoice": false
+                }
+            ],
+            "hint": ""
+        },
+        {
+            "id": "acb23d6b-b850-4cda-a4c8-8b33da37c749",
+            "type": 0,
+            "title": "Welche der folgenden Sätze verwendet die richtige Zeitform für Perfekt?",
+            "choices": [
+                {
+                    "id": "3e84d6af-565e-483f-9b15-b759be13282d",
+                    "text": "Ich ging gestern Abend ins Kino.",
+                    "rightChoice": false
+                },
+                {
+                    "id": "8563a91d-eccd-499b-9c3f-d659c5b2622a",
+                    "text": "Ich bin gestern Abend ins Kino gegangen.",
+                    "rightChoice": true
+                },
+                {
+                    "id": "ea5ea631-4506-4ef2-9cb0-2bbcadb032d1",
+                    "text": "Ich werde morgen Abend ins Kino gehen.",
+                    "rightChoice": false
+                }
+            ],
+            "hint": ""
+        },
+        {
+            "id": "ebd90f5a-cd56-4586-a61d-be7ef651866b",
+            "type": 0,
+            "title": "Welche der folgenden Sätze verwendet die richtige Zeitform für Futur I?",
+            "choices": [
+                {
+                    "id": "785580db-7f5d-485d-b769-fd7a487f47d6",
+                    "text": "Ich habe das Buch gestern gelesen.",
+                    "rightChoice": false
+                },
+                {
+                    "id": "cc3234ff-08ac-4f37-9245-4bfc7833ba9f",
+                    "text": "Ich werde das Buch morgen lesen.",
+                    "rightChoice": true
+                },
+                {
+                    "id": "366b7efb-bc32-408a-bad0-7c5947bf3987",
+                    "text": "Ich habe das Buch vor einer Stunde gelesen.",
+                    "rightChoice": false
+                }
+            ],
+            "hint": ""
+        },
+        {
+            "id": "20a780b1-7c81-443c-a8bc-d08972588d1d",
+            "type": 1,
+            "title": "Welche der folgenden Sätze verwenden die Zeitform Präteritum?",
+            "choices": [
+                {
+                    "id": "3794799d-2f54-4b59-a848-4b377692cfc8",
+                    "text": "Gestern war ich im Kino.",
+                    "rightChoice": true
+                },
+                {
+                    "id": "4e421bb9-b293-40d6-bce2-f479a9ec1e8f",
+                    "text": "Ich spiele jeden Tag Tennis.",
+                    "rightChoice": false
+                },
+                {
+                    "id": "83c1be69-954c-427b-bcb8-1c3a4ecde278",
+                    "text": "Ich war letzten Sommer in Spanien.",
+                    "rightChoice": true
+                },
+                {
+                    "id": "e7d8cc92-c408-4b4b-95cc-8d2f74289b54",
+                    "text": "Ich bin heute morgen zum Bäcker gegangen.",
+                    "rightChoice": false
+                }
+            ],
+            "hint": ""
+        },
+        {
+            "id": "f92bfe26-d204-44bf-87b6-b4e29b4df349",
+            "type": 0,
+            "title": "Welche Zeitform wird verwendet, um eine Handlung auszudrücken, die in der Zukunft stattfinden wird?",
+            "choices": [
+                {
+                    "id": "2d1eb15e-d46f-4269-a92e-44b94597add3",
+                    "text": "Präteritum",
+                    "rightChoice": false
+                },
+                {
+                    "id": "bedb40ac-75f4-4ee8-96f3-2c6d8c496ee5",
+                    "text": "Präsens",
+                    "rightChoice": true
+                },
+                {
+                    "id": "2e8b4a5e-9274-45c8-8d13-a1dc4e7d8326",
+                    "text": "Futur I",
+                    "rightChoice": true
+                }
+            ],
+            "hint": ""
+        },
+        {
+            "id": "aa17ab5d-b224-47ec-a37f-a7b2488285bf",
+            "type": 0,
+            "title": "Welche der folgenden Sätze verwendet die richtige Zeitform für Plusquamperfekt?",
+            "choices": [
+                {
+                    "id": "791994d4-d251-4fd7-be6f-a2093e0e1d88",
+                    "text": "Ich esse schon zu Mittag, als er ankam.",
+                    "rightChoice": false
+                },
+                {
+                    "id": "ab1497d8-3705-4bcb-8317-66f84f627466",
+                    "text": "Ich hatte schon zu Mittag gegessen, als er ankam.",
+                    "rightChoice": true
+                },
+                {
+                    "id": "21c341d4-a1ff-4a60-aebe-ee996e7546e8",
+                    "text": "Ich werde schon zu Mittag gegessen haben, wenn er ankommt.",
+                    "rightChoice": false
+                }
+            ],
+            "hint": ""
+        },
+        {
+            "id": "18d33c27-c766-4d9c-8850-15321f56dac7",
+            "type": 0,
+            "title": "Welche Zeitform wird verwendet, um eine Handlung auszudrücken, die vor einer anderen Handlung, in der Vergangenheit, abgeschlossen war?",
+            "choices": [
+                {
+                    "id": "9bb4988b-4531-43f1-9005-f8cc59b59181",
+                    "text": "Perfekt",
+                    "rightChoice": false
+                },
+                {
+                    "id": "317da955-73a4-4c6a-8a64-010467d7a5f5",
+                    "text": "Präteritum",
+                    "rightChoice": false
+                },
+                {
+                    "id": "dc536121-99f8-4d28-b02e-de131d02ccbf",
+                    "text": "Plusquamperfekt",
+                    "rightChoice": true
+                }
+            ],
+            "hint": ""
+        },
+        {
+            "id": "e9c81c59-f224-429e-b4cf-db04d349f039",
+            "type": 2,
+            "title": "Zeitformen im Deutschen",
+            "gaps": "Wenn man über vergangene Handlungen spricht, die bereits abgeschlossen sind, verwendet man das {{1}}. Beispielsweise: Ich {{2}} gestern ins Kino gegangen. \nFür Handlungen, die in der Vergangenheit abgeschlossen waren, aber vor einem bestimmten Zeitpunkt stattfanden, wird das {{3}} verwendet. \nUm eine Handlung zu beschreiben, die gerade im Moment stattfindet, verwendet man das {{4}}. \nHandlungen, die in der Zukunft liegen, werden im Deutschen häufig mit dem {{5}} ausgedrückt. \nFür Handlungen, die zu einem bestimmten Zeitpunkt in der Zukunft abgeschlossen sein werden, verwendet man das {{6}}.",
+            "choices": [
+                {
+                    "1": "Perfekt"
+                },
+                {
+                    "2": "bin"
+                },
+                {
+                    "3": "Plusquamperfekt"
+                },
+                {
+                    "4": "Präsens"
+                },
+                {
+                    "5": "Futur I"
+                },
+                {
+                    "6": "Futur II"
+                }
+            ],
+            "hint": ""
+        }
+    ]
+}

@@ -1,0 +1,302 @@
+{
+    "taskTitle": "Satzbau Aufgaben",
+    "taskDescription": "Sotiere die Sätze.",
+    "tasks": [
+        
+        {
+            "id": "e8b9ffe9-6a1c-4b6d-9081-c6c499e81fb7",
+            "title": "Sotiere nach richtiger Reihenfolge",
+            "type": 3,
+            "choices": [
+                {
+                    "title": "Paula",
+                    "position": 0
+                },
+                {
+                    "title": " interessiert",
+                    "position": 1
+                }
+                ,
+                {
+                    "title": " sich ",
+                    "position": 2
+                },
+                {
+                    "title": "für",
+                    "position": 3
+                },
+                {
+                    "title": "französische ",
+                    "position": 4
+                },
+                {
+                    "title": "Lyrik",
+                    "position": 5
+                }
+                
+            ],
+            "hint": "Sotiere ASC"
+        },
+        {
+            "id": "2698215a-6132-4bbc-8883-71606044034b",
+            "title": "Sotiere nach richtiger Reihenfolge",
+            "type": 3,
+            "choices": [
+                {
+                    "title": "Carola",
+                    "position": 0
+                },
+                {
+                    "title": " fragt",
+                    "position": 1
+                }
+                ,
+                {
+                    "title": " den ",
+                    "position": 2
+                },
+                {
+                    "title": "Bahnbeamten",
+                    "position": 3
+                },
+                {
+                    "title": "nach",
+                    "position": 4
+                },
+                {
+                    "title": "dem",
+                    "position": 5
+                },
+                {
+                    "title": "nächsten",
+                    "position": 6
+                },
+                {
+                    "title": "Zug",
+                    "position": 7
+                }
+                
+            ],
+            "hint": "Sotiere ASC"
+        },
+        {
+            "id": "7540725c-4f2e-4c60-9379-4ee167ff20df",
+            "title": "Sotiere nach richtiger Reihenfolge",
+            "type": 3,
+            "choices": [
+                {
+                    "title": "Simone",
+                    "position": 0
+                },
+                {
+                    "title": " bezahlt",
+                    "position": 1
+                }
+                ,
+                {
+                    "title": " die ",
+                    "position": 2
+                },
+                {
+                    "title": "Rechnung",
+                    "position": 3
+                },
+                {
+                    "title": "mit",
+                    "position": 4
+                },
+                {
+                    "title": "ihrer",
+                    "position": 5
+                },
+                {
+                    "title": "neuen",
+                    "position": 6
+                },
+                {
+                    "title": "Kreditkarte",
+                    "position": 7
+                }
+                
+            ],
+            "hint": "Sotiere ASC"
+        },
+        {
+            "id": "996db76a-8bfd-43ab-9670-f33a448761e6",
+            "title": "Sotiere nach richtiger Reihenfolge",
+            "type": 3,
+            "choices": [
+                {
+                    "title": "Man",
+                    "position": 0
+                },
+                {
+                    "title": " forderte",
+                    "position": 1
+                }
+                ,
+                {
+                    "title": " ihn ",
+                    "position": 2
+                },
+                {
+                    "title": "zum",
+                    "position": 3
+                },
+                {
+                    "title": "sofortigen",
+                    "position": 4
+                },
+                {
+                    "title": "Rücktritt",
+                    "position": 5
+                },
+                {
+                    "title": "von",
+                    "position": 6
+                },
+                {
+                    "title": "allen",
+                    "position": 7
+                },
+                {
+                    "title": "Ämter",
+                    "position": 8
+                },
+                {
+                    "title": "auf.",
+                    "position": 9
+                }
+                
+            ],
+            "hint": "Sotiere ASC"
+        },
+        {
+            "id": "d9cc34d2-11c0-44f1-a2b8-0991be50bf8a",
+            "title": "Sotiere nach richtiger Reihenfolge",
+            "type": 3,
+            "choices": [
+                {
+                    "title": "Die",
+                    "position": 0
+                },
+                {
+                    "title": " Zusammenarbeit",
+                    "position": 1
+                }
+                ,
+                {
+                    "title": " unserer ",
+                    "position": 2
+                },
+                {
+                    "title": "Firmen",
+                    "position": 3
+                },
+                {
+                    "title": "basiert",
+                    "position": 4
+                },
+                {
+                    "title": "auf",
+                    "position": 5
+                },
+                {
+                    "title": "gegenseitigem",
+                    "position": 6
+                },
+                {
+                    "title": "Vertrauen",
+                    "position": 7
+                }
+            ],
+            "hint": "Sotiere ASC"
+        },
+        {
+            "id": "6f159ed2-dd44-40d0-8a57-65cc7d7745d4",
+            "title": "Sotiere nach richtiger Reihenfolge",
+            "type": 3,
+            "choices": [
+                {
+                    "title": "Wann",
+                    "position": 0
+                },
+                {
+                    "title": "können",
+                    "position": 1
+                }
+                ,
+                {
+                    "title": "wir",
+                    "position": 2
+                },
+                {
+                    "title": "uns",
+                    "position": 3
+                },
+                {
+                    "title": "auf",
+                    "position": 4
+                },
+                {
+                    "title": "dem",
+                    "position": 5
+                },
+                {
+                    "title": "Spielplatz",
+                    "position": 6
+                },
+                {
+                    "title": "treffen ?",
+                    "position": 7
+                }
+            ],
+            "hint": "Sotiere ASC"
+        },
+        {
+            "id": "b871e4a0-85b3-4e76-b8fe-597e92caad3f",
+            "title": "Sotiere nach richtiger Reihenfolge",
+            "type": 3,
+            "choices": [
+                {
+                    "title": "Ob",
+                    "position": 0
+                },
+                {
+                    "title": "Sie",
+                    "position": 1
+                }
+                ,
+                {
+                    "title": "wieder",
+                    "position": 2
+                },
+                {
+                    "title": "zu",
+                    "position": 3
+                },
+                {
+                    "title": "spät",
+                    "position": 4
+                },
+                {
+                    "title": "kommt",
+                    "position": 5
+                },
+                {
+                    "title": ",weiß",
+                    "position": 6
+                },
+                {
+                    "title": "man",
+                    "position": 7
+                },
+                {
+                    "title": "nicht",
+                    "position": 8
+                }
+            ],
+            "hint": "Sotiere ASC"
+        }
+    ]
+}
