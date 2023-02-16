@@ -4,7 +4,6 @@
     "tasks": [
         {
             "id": "singleChoice",
-            "type": "single",
             "title": "Deine Mudda <...>",
             "type": 0,
             "choices": [
@@ -51,7 +50,6 @@
         },
         {
             "id": "gapText",
-            "type": "gap",
             "title": "",
             "type": 2,
             "gaps": [

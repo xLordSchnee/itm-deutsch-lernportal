@@ -22,7 +22,7 @@
         {
           "id": "faec2859-4678-4292-b026-b33260f3ea37",
           "title": "Ich glaube, <...> es heute regnen wird.",
-          "type": 0,
+          "type": 1,
           "choices": [
             {
               "id": "e43be12f-5d15-4991-80e0-0acf9bebca2a",
