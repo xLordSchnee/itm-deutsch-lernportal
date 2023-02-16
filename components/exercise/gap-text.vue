@@ -18,12 +18,16 @@
       {{ props.task.gaps }}
       <v-for :key="key" v-for="(key, value) in props.task.choices">
         <div>
-          {{ value + 1 }}: <input type="text" placeholder="das/dass" v-model="answers[value]" />
+          {{ value + 1 }}: <input type="text" placeholder="Hier eintragen" v-model="answers[value]" />
         </div>
       </v-for>
     </v-container>
     <v-container v-else-if="props.task.type == 3">
-      Sortierung!
+      <v-for :key="key" v-for="(key, value) in props.task.choices">
+        <div>
+          {{ key.title }}: <input type="number" placeholder="Zahl eintragen" v-model="answers[value]" />
+        </div>
+      </v-for>
     </v-container>
     <v-container>
       <v-btn color="success" @click="submit">Submit</v-btn>
@@ -32,7 +36,7 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, onBeforeUpdate, onMounted, onBeforeMount } from "vue";
 const props = defineProps({
   task: Object,
   lastPage: Boolean,
@@ -42,7 +46,6 @@ const props = defineProps({
 const answers = ref({});
 const error = ref(false);
 const errorMessage = ref("");
-
 
 function showError(message) {
   errorMessage.value = message;
@@ -57,15 +60,33 @@ function checkAnswer() {
 
   var isCorrect = true;
 
-  for (var i = 0; i < props.task.choices.length; i++) {
-    var choice = props.task.choices[i][i + 1].toLowerCase();
-    var answer = answers.value[i].toLowerCase();
-    console.log(choice, answer)
-    if (choice != answer) {
-      console.log(i + " ist falsch");
-      isCorrect = false;
+  if (props.task.type == 2) {
+    for (var i = 0; i < props.task.choices.length; i++) {
+      var choice = props.task.choices[i][i + 1].toLowerCase();
+      var answer = answers.value[i].toLowerCase();
+      if (choice != answer) {
+        isCorrect = false;
+      }
+    }
+  } else if (props.task.type == 3) {
+    var values = Object.values(answers.value);
+
+    var isDuplicate = values.some((value, index) => values.indexOf(value) !== index);
+
+    if (isDuplicate) {
+      showError("In der Sortierung darf es keine doppelten Belegungen geben.")
+      return 'error';
+    }
+
+    for (var i = 0; i < props.task.choices.length; i++) {
+      var choice = props.task.choices[i].position;
+      var answer = answers.value[i];
+      if (choice != answer - 1) {
+        isCorrect = false;
+      }
     }
   }
+
   return isCorrect;
 }
 
@@ -74,6 +95,35 @@ function submit() {
   if (check == 'error') return;
   props.callback(check);
 }
+
+function shuffle(a) {
+  var j, x, i;
+  for (i = a.length - 1; i > 0; i--) {
+    j = Math.floor(Math.random() * (i + 1));
+    x = a[i];
+    a[i] = a[j];
+    a[j] = x;
+  }
+  return a;
+}
+
+onMounted(() => {
+  if (props.task.type == 3) {
+    props.task.choices = shuffle(props.task.choices);
+  }
+})
+
+onBeforeUpdate(() => {
+  if (props.task.type == 3) {
+    props.task.choices = shuffle(props.task.choices);
+  }
+})
+
+onBeforeMount(() => {
+  if (props.task.type == 3) {
+    props.task.choices = shuffle(props.task.choices);
+  }
+})
 </script>
 
 

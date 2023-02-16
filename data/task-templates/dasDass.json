@@ -8,21 +8,21 @@
           "type": 0,
           "choices": [
             {
-              "id": "aee2e84e-44f3-47d6-bd0d-94012cf708e4",
-              "text": "das",
-              "rightChoice": true
-            },
-            {
               "id": "944196c8-a27a-4f8e-b20c-a8dae0077833",
               "text": "dass",
               "rightChoice": false
+            },
+            {
+              "id": "aee2e84e-44f3-47d6-bd0d-94012cf708e4",
+              "text": "das",
+              "rightChoice": true
             }
           ]
         },
         {
           "id": "faec2859-4678-4292-b026-b33260f3ea37",
           "title": "Ich glaube, <...> es heute regnen wird.",
-          "type": 1,
+          "type": 0,
           "choices": [
             {
               "id": "e43be12f-5d15-4991-80e0-0acf9bebca2a",
