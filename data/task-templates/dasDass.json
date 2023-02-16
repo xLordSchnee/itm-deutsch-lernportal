@@ -1,86 +1,84 @@
 {
     "taskTitle": "Das/Dass",
-    "taskDescription": "Bearbeite die Aufgaben.",
+    "taskDescription": "Bearbeite die folgenden Aufgaben.",
     "tasks": [
         {
-          "id": "Multiple Choice das/dass 1",
+          "id": "93468398-40fe-45d8-901c-7adae96161fa",
           "title": "<...> Auto ist gelb.",
-          "type": 1,
+          "type": 0,
           "choices": [
             {
-              "id": "guidv4",
+              "id": "aee2e84e-44f3-47d6-bd0d-94012cf708e4",
               "text": "das",
               "rightChoice": true
             },
             {
-              "id": "guidv4",
+              "id": "944196c8-a27a-4f8e-b20c-a8dae0077833",
               "text": "dass",
               "rightChoice": false
             }
           ]
         },
         {
-          "id": "Multiple Choice das/dass 2",
+          "id": "faec2859-4678-4292-b026-b33260f3ea37",
           "title": "Ich glaube, <...> es heute regnen wird.",
-          "type": 1,
+          "type": 0,
           "choices": [
             {
-              "id": "guidv4",
+              "id": "e43be12f-5d15-4991-80e0-0acf9bebca2a",
               "text": "dass",
               "rightChoice": true
             },
             {
-              "id": "guidv4",
+              "id": "527f7add-0706-4787-b415-bd35b5a3494f",
               "text": "das",
               "rightChoice": false
             }
           ]
         },
         {
-          "id": "Multiple Choice das/dass 3",
+          "id": "c26d42de-b116-4049-bcbd-42371bb229af",
           "title": "Es ist wichtig, <...> du die Regeln beachtest.",
-          "type": 1,
+          "type": 0,
           "choices": [
             {
-              "id": "guidv4",
+              "id": "48792f7b-07ef-4dab-82bb-f1ce1d61f3bc",
               "text": "dass",
               "rightChoice": true
             },
             {
-              "id": "guidv4",
+              "id": "c308dae5-32f0-4aa1-a754-802d570d1d33",
               "text": "das",
               "rightChoice": false
             }
           ]
         },
         {
-          "id": "Multiple Choice das/dass 4",
+          "id": "6c709e76-cb48-42a4-891b-3349f49bc2dc",
           "title": "Der Junge glaubt, <...> er ein guter Läufer ist.",
-          "type": 1,
+          "type": 0,
           "choices": [
             {
-              "id": "guidv4",
+              "id": "1f116b6e-fb5d-412b-9a1e-dcdd5802df25",
               "text": "dass",
               "rightChoice": true
             },
             {
-              "id": "guidv4",
+              "id": "cd0fd2f8-f348-45df-9da7-dbc0fc6e8187",
               "text": "das",
               "rightChoice": false
             }
           ]
         },
         {
-          "id": "gapText",
+          "id": "6eff078a-f4a6-4414-a779-6fd5dc2b2850",
           "title": "Das/Dass Lücken füllen",
           "type": 2,
-          "gaps": [
-            "{{1}} Mädchen ging in den Vertania-Wald, denn sie wollte {{2}} Pokemon Pikachu fangen. Sie dachte sich, {{3}} es bestimmt ein Pikachu im Wald geben würde, {{4}} besonders stark ist. Als sie tiefer in den Wald hineinging, bemerkte sie, {{5}} sie gar keine Pokebälle dabei hatte. Traurig machte sie sich zurück auf den Weg in {{6}} Dorf. {{7}} Mädchen war enttäuscht, {{8}} sie kein Pikachu fangen konnte."
-          ],
+          "gaps": "{{1}} Mädchen ging in den Vertania-Wald, denn sie wollte {{2}} Pokemon Pikachu fangen. Sie dachte sich, {{3}} es bestimmt ein Pikachu im Wald geben würde, {{4}} besonders stark ist. Als sie tiefer in den Wald hineinging, bemerkte sie, {{5}} sie gar keine Pokebälle dabei hatte. Traurig machte sie sich zurück auf den Weg in {{6}} Dorf. {{7}} Mädchen war enttäuscht, {{8}} sie kein Pikachu fangen konnte.",
           "choices": [
             {
               "1": "Das"
-            },
+            },  
             {
               "2": "das"
             },

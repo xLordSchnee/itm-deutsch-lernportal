@@ -1,0 +1,106 @@
+{
+    "taskTitle": "Getrennt- und Zusammenschreibung",
+    "taskDescription": "Trainiere die Regeln für das Getrennt- und Zusammenschreibung",
+    "tasks": [
+        {
+            "id": "9d42a734-e24a-49ba-8bb4-a96cfb3f4131",
+            "title": "Welche Verbindung schreibst du getrennt?",
+            "type": 0,
+            "choices": [
+                {
+                    "id": "f52a36bc-56e2-402a-9b2b-29acef66effd",
+                    "text": "Adjektiv + Verb",
+                    "rightChoice": true
+                },
+                {
+                    "id": "b0b25745-c693-4393-a502-135010558c98",
+                    "text": "Nomen + Adjektiv",
+                    "rightChoice": false
+                },
+                {
+                    "id": "15b31082-f5b3-4739-bad6-b6c7d3fe3c1a",
+                    "text": "Partikel + Verb",
+                    "rightChoice": false
+                }
+            ],
+            "hint": ""
+        },
+        {
+            "id": "d599796c-52eb-41a5-abf7-246ba15e0cf1",
+            "title": "Welche Verbindung schreibst du zusammen?",
+            "type": 0,
+            "choices": [
+                {
+                    "id": "443c35d0-85d6-4cfd-8179-82b22fbc587f",
+                    "text": "Verb + Verb",
+                    "rightChoice": false
+                },
+                {
+                    "id": "dcd7b8ad-ee87-4dcd-a655-ea75f0ac9105",
+                    "text": "Nomen + Nomen",
+                    "rightChoice": true
+                },
+                {
+                    "id": "594f80a8-d3d2-4640-8eeb-67f419eea6f2",
+                    "text": "Adjektiv + Verb",
+                    "rightChoice": false
+                }
+            ],
+            "hint": ""
+        },
+		{
+            "id": "0f9e09ef-9433-4f6d-8bce-834abc8776e8",
+            "title": "Was ist richtig?",
+            "type": 0,
+            "choices": [
+                {
+                    "id": "a14bf921-2b87-492a-b3e9-100db12eaf5d",
+                    "text": "Ich muss noch lesen üben.",
+                    "rightChoice": true
+                },
+                {
+                    "id": "4ef1243f-3d87-4697-832c-5f83a97c65ca",
+                    "text": "Ich muss noch Lesenüben.",
+                    "rightChoice": false
+                }
+            ],
+            "hint": ""
+        },
+		{
+            "id": "singleChoice",
+            "title": "Was ist richtig?",
+            "type": 0,
+            "choices": [
+                {
+                    "id": "fee8eea1-c102-417a-b4cc-a80afe50e08c",
+                    "text": "Ich bin krank geschrieben, daher kann ich viel lesen.",
+                    "rightChoice": false
+                },
+                {
+                    "id": "77161f71-322a-49bb-bbc2-529a4f892781",
+                    "text": "Ich bin krankgeschrieben, daher kann ich viel lesen.",
+                    "rightChoice": true
+                }
+            ],
+            "hint": ""
+        },
+		{
+            "id": "singleChoice",
+            "title": "Was ist richtig?",
+            "type": 0,
+            "choices": [
+                {
+                    "id": "6642d5e2-2f7d-4361-8d2d-c5e6057a4be3",
+                    "text": "Buchdeckel",
+                    "rightChoice": true
+                },
+                {
+                    "id": "58fd8789-34b8-4932-9df4-f5298a034f80",
+                    "text": "Buch deckel",
+                    "rightChoice": false
+                }
+            ],
+            "hint": ""
+        }
+    ]
+}
