@@ -83,7 +83,7 @@ import SingleChoice from "../../components/exercise/single-choice";
 import MultipleChoice from "../../components/exercise/multiple-choice";
 import GapText from "../../components/exercise/gap-text";
 
-import Exercise from "../../data/task-templates/Aufgaben_Zeitformen.json"
+import Exercise from "../../data/task-templates/dasDass.json"
 
 const showTasks = ref(false);
 const loading = ref(true);
