@@ -1,0 +1,93 @@
+{
+    "taskTitle": "Example task",
+    "taskDescription": "Complete this example task.",
+    "tasks": [
+        {
+            "id": "singleChoice",
+            "type": "single",
+            "title": "Deine Mudda <...>",
+            "type": 0,
+            "choices": [
+                {
+                    "id": "guidv4",
+                    "text": "ist fett.",
+                    "rightChoice": false
+                },
+                {
+                    "id": "guidv4",
+                    "text": "ist intelligent.",
+                    "rightChoice": false
+                },
+                {
+                    "id": "guidv4",
+                    "text": "ist wirklich deine Mutter. ;)",
+                    "rightChoice": true
+                }
+            ],
+            "hint": ""
+        },
+        {
+            "id": "multipleChoice",
+            "type": "multiple",
+            "title": "1 + 1 = <...>",
+            "type": 1,
+            "choices": [
+                {
+                    "id": "guidv4",
+                    "text": "mathe.",
+                    "rightChoice": true
+                },
+                {
+                    "id": "guidv4",
+                    "text": "69 hihihi.",
+                    "rightChoice": false
+                },
+                {
+                    "id": "guidv4",
+                    "text": "2.",
+                    "rightChoice": true
+                }
+            ],
+            "hint": ""
+        },
+        {
+            "id": "gapText",
+            "type": "gap",
+            "title": "",
+            "type": 2,
+            "gaps": [
+                "In {{1}} ist es kälter als am {{2}}"
+            ],
+            "choices": [
+                {
+                    "1": "Deutschland"
+                },
+                {
+                    "2": "Equator"
+                }
+            ],
+            "hint": "Deutschland ist immer kalt"
+        },
+        {
+            "id": "gapTextSorting",
+            "title": "Sotiere nach richtiger Reihenfolge",
+            "type": 3,
+            "choices": [
+                {
+                    "title": "Position 1",
+                    "position": 0
+                },
+                {
+                    "title": "Position 2",
+                    "position": 1
+                }
+                ,
+                {
+                    "title": "Position 3",
+                    "position": 2
+                }
+            ],
+            "hint": "Sotiere ASC"
+        }
+    ]
+}

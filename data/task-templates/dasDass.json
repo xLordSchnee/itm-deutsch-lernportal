@@ -1,93 +1,108 @@
 {
-    "taskTitle": "Example task",
-    "taskDescription": "Complete this example task.",
+    "taskTitle": "Das/Dass",
+    "taskDescription": "Bearbeite die Aufgaben.",
     "tasks": [
         {
-            "id": "singleChoice",
-            "type": "single",
-            "title": "Deine Mudda <...>",
-            "type": 0,
-            "choices": [
-                {
-                    "id": "guidv4",
-                    "text": "ist fett.",
-                    "rightChoice": false
-                },
-                {
-                    "id": "guidv4",
-                    "text": "ist intelligent.",
-                    "rightChoice": false
-                },
-                {
-                    "id": "guidv4",
-                    "text": "ist wirklich deine Mutter. ;)",
-                    "rightChoice": true
-                }
-            ],
-            "hint": ""
+          "id": "Multiple Choice das/dass 1",
+          "title": "<...> Auto ist gelb.",
+          "type": 1,
+          "choices": [
+            {
+              "id": "guidv4",
+              "text": "das",
+              "rightChoice": true
+            },
+            {
+              "id": "guidv4",
+              "text": "dass",
+              "rightChoice": false
+            }
+          ]
         },
         {
-            "id": "multipleChoice",
-            "type": "multiple",
-            "title": "1 + 1 = <...>",
-            "type": 1,
-            "choices": [
-                {
-                    "id": "guidv4",
-                    "text": "mathe.",
-                    "rightChoice": true
-                },
-                {
-                    "id": "guidv4",
-                    "text": "69 hihihi.",
-                    "rightChoice": false
-                },
-                {
-                    "id": "guidv4",
-                    "text": "2.",
-                    "rightChoice": true
-                }
-            ],
-            "hint": ""
+          "id": "Multiple Choice das/dass 2",
+          "title": "Ich glaube, <...> es heute regnen wird.",
+          "type": 1,
+          "choices": [
+            {
+              "id": "guidv4",
+              "text": "dass",
+              "rightChoice": true
+            },
+            {
+              "id": "guidv4",
+              "text": "das",
+              "rightChoice": false
+            }
+          ]
         },
         {
-            "id": "gapText",
-            "type": "gap",
-            "title": "",
-            "type": 2,
-            "gaps": [
-                "In {{1}} ist es kälter als am {{2}}"
-            ],
-            "choices": [
-                {
-                    "1": "Deutschland"
-                },
-                {
-                    "2": "Equator"
-                }
-            ],
-            "hint": "Deutschland ist immer kalt"
+          "id": "Multiple Choice das/dass 3",
+          "title": "Es ist wichtig, <...> du die Regeln beachtest.",
+          "type": 1,
+          "choices": [
+            {
+              "id": "guidv4",
+              "text": "dass",
+              "rightChoice": true
+            },
+            {
+              "id": "guidv4",
+              "text": "das",
+              "rightChoice": false
+            }
+          ]
         },
         {
-            "id": "gapTextSorting",
-            "title": "Sotiere nach richtiger Reihenfolge",
-            "type": 3,
-            "choices": [
-                {
-                    "title": "Position 1",
-                    "position": 0
-                },
-                {
-                    "title": "Position 2",
-                    "position": 1
-                }
-                ,
-                {
-                    "title": "Position 3",
-                    "position": 2
-                }
-            ],
-            "hint": "Sotiere ASC"
+          "id": "Multiple Choice das/dass 4",
+          "title": "Der Junge glaubt, <...> er ein guter Läufer ist.",
+          "type": 1,
+          "choices": [
+            {
+              "id": "guidv4",
+              "text": "dass",
+              "rightChoice": true
+            },
+            {
+              "id": "guidv4",
+              "text": "das",
+              "rightChoice": false
+            }
+          ]
+        },
+        {
+          "id": "gapText",
+          "title": "Das/Dass Lücken füllen",
+          "type": 2,
+          "gaps": [
+            "{{1}} Mädchen ging in den Vertania-Wald, denn sie wollte {{2}} Pokemon Pikachu fangen. Sie dachte sich, {{3}} es bestimmt ein Pikachu im Wald geben würde, {{4}} besonders stark ist. Als sie tiefer in den Wald hineinging, bemerkte sie, {{5}} sie gar keine Pokebälle dabei hatte. Traurig machte sie sich zurück auf den Weg in {{6}} Dorf. {{7}} Mädchen war enttäuscht, {{8}} sie kein Pikachu fangen konnte."
+          ],
+          "choices": [
+            {
+              "1": "Das"
+            },
+            {
+              "2": "das"
+            },
+            {
+              "3": "dass"
+            },
+            {
+              "4": "das"
+            },
+            {
+              "5": "dass"
+            },
+            {
+              "6": "das"
+            },
+            {
+              "7": "Das"
+            },
+            {
+              "8": "dass"
+            }
+          ]
         }
     ]
 }
