@@ -1,0 +1,69 @@
+{
+    "taskTitle": "Thema Konjunktionen-Übungen von Pascal",
+    "taskDescription": "Folgende Aufgaben sollen dein Verständnis von Konjunktionen testen.",
+    "tasks": [
+        {
+            "id": "a701d862-b7d4-4d49-9f17-d97de2141ee0",
+            "title": "Welche Konjunktion verbindet zwei Gegensätze?",
+            "type": 0,
+            "choices": [
+                {
+                    "id": "201a8100-3d25-461a-8902-e0ad82e50d2f",
+                    "text": "und",
+                    "rightChoice": false
+                },
+                {
+                    "id": "d88073e2-5612-4719-be90-195e9218cb08",
+                    "text": "oder",
+                    "rightChoice": false
+                },
+                {
+                    "id": "e8a0c671-d402-4fd3-a92d-23273bb20b1b",
+                    "text": "aber",
+                    "rightChoice": true
+                }
+            ],
+            "hint": "Denk an ein Beispiel wie 'Ich möchte ins Freibad, aber es regnet.'"
+        },
+        {
+            "id": "47020ae9-7e75-46be-8551-9d0890ffb33a",
+            "title": "Welche Konjunktionen können verwendet werden, um zwei Bedingungen zu verknüpfen?",
+            "type": 1,
+            "choices": [
+                {
+                    "id": "50824ded-f2ad-4284-8b01-9b996c2082e1",
+                    "text": "weil",
+                    "rightChoice": true
+                },
+                {
+                    "id": "53678e10-d1aa-4628-b7d8-15afa12957d2",
+                    "text": "denn",
+                    "rightChoice": true
+                },
+                {
+                    "id": "0e743cd6-06f0-43a5-939f-6f1ea5d26c28",
+                    "text": "oder",
+                    "rightChoice": false
+                },
+                {
+                    "id": "c63c4b7f-1727-4f7a-9b54-9036eff395c3",
+                    "text": "aber",
+                    "rightChoice": false
+                }
+            ],
+            "hint": "Denk an ein Beispiel wie 'Ich gehe nicht zum Sport, weil ich krank bin, und ich muss außerdem meine Hausaufgaben machen, denn ich habe morgen eine Prüfung.'"
+        },
+        {
+            "id": "c9a80cb1-6c77-41c8-adfd-f0228bcb64d0",
+            "title": "Setze die passende Konjunktion ein.",
+            "type": 2,
+            "gaps": "Ich trinke keinen Kaffee, {{1}} ich mag den Geschmack nicht. ",
+            "choices": [
+                {
+                    "1": "aber"
+                }
+            ],
+            "hint": "Welche Konjunktion wird verwendet, um einen Grund oder eine Ursache auszudrücken?"
+        }
+    ]
+}
