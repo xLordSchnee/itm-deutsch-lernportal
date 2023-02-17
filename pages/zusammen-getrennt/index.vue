@@ -12,15 +12,16 @@
         </v-card>
       </v-dialog>
     </div>
-
-    <v-container class="mx-auto" style="width: auto">
-      <v-card v-if="!showTasks">
-        <v-card-title class="headline">
+    <v-container class="mx-auto w-75" style="width: auto;">
+      <v-card class="mx-auto mb-2">
+        <v-card-title class="font-weight-bold text-h5 text-center">
           {{ Exercise.taskTitle }}
         </v-card-title>
-        <v-card-text>
-          <h3>{{ Exercise.taskDescription }}</h3>
-        </v-card-text>
+      </v-card>
+      <v-card v-if="!showTasks">
+        <v-card-title>
+          {{ Exercise.taskDescription }}
+        </v-card-title>
         <v-card-text class="Content">
           <div class="video">
             <v-container>
@@ -38,12 +39,9 @@
         </v-card-text>
       </v-card>
       <v-card v-else>
-        <v-card-title class="headline">
-          {{ Exercise.taskTitle }}
+        <v-card-title>
+          {{ Exercise.taskDescription }}
         </v-card-title>
-        <v-card-text>
-          <h3>{{ Exercise.taskDescription }}</h3>
-        </v-card-text>
         <div v-if="exerciseFinished">
           <v-container>
             <span v-html="resultText"></span>

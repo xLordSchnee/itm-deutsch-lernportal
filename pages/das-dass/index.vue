@@ -12,7 +12,7 @@
         </v-card>
       </v-dialog>
     </div>
-    <v-container class="mx-auto" style="width: auto">
+    <v-container class="mx-auto w-75 w-auto">
       <v-card class="mx-auto mb-2">
         <v-card-title class="font-weight-bold text-h5 text-center">
           {{ Exercise.taskTitle }}
