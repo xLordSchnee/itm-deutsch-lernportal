@@ -13,8 +13,8 @@
                 <label for="Ja1"> Ja</label><br>
                 <input type="checkbox" id="Ja2" name="Ja natürlich" value="Ja natürlich">
                 <label for="Ja2"> Ja natürlich</label><br>
-                <input type="checkbox" id="Ja2" name="JA!!!" value="JA!!!">
-                <label for="Ja2"> JA!!!</label><br><br>
+                <input type="checkbox" id="Ja3" name="JA!!!" value="JA!!!">
+                <label for="Ja3"> JA!!!</label><br><br>
                 <input type="submit" value="Submit">
             </form>
         </div>
