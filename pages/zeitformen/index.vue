@@ -108,7 +108,7 @@ const resultText = ref('');
 const error = ref(false);
 const errorMessage = ref("");
 const externalLinks = ref([
-  { title: "Zeitformen Video", url: "https://bwvkrborde-my.sharepoint.com/personal/koll132756_students_bwv-ahaus_de/_layouts/15/stream.aspx?id=%2Fpersonal%2Fkoll132756_students_bwv-ahaus_de%2FDocuments%2FAnlagen%2Fsimpleshow_Zeitformen_in_der_deutschen_Sprache%2Emp4&ga=1" },
+  { title: "Zeitformen Video", url: "https://bwvkrborde-my.sharepoint.com/:v:/g/personal/koll132756_students_bwv-ahaus_de/EYKoXvsQkkpNsohnd_LgDrIBLxNCPvvmSnbLU_Lg7fVXIA?e=kJ5yKw" },
   { title: "Wichtige Informationen", url: "https://bwvkrborde-my.sharepoint.com/:w:/g/personal/koll132756_students_bwv-ahaus_de/EbNLzWvvIYtCqSvTe5kuWQEB0Q1P5vt9azhDCDQnHDn2EQ?e=3e9hYf" }
 ])
 
