@@ -12,16 +12,16 @@
         </v-card>
       </v-dialog>
     </div>
-    <v-container class="mx-auto w-75" style="width: auto;">
-      <v-card class="mx-auto mb-2">
-        <v-card-title class="font-weight-bold text-h5 text-center">
+    <v-container class="mx-auto w-75 w-auto">
+        <v-card class="mx-auto mb-2">
+        <v-card-title class="font-weight-bold text-h4 text-center">
           {{ Exercise.taskTitle }}
         </v-card-title>
       </v-card>
       <v-card v-if="!showTasks">
-        <v-card-title>
+        <v-card-text class="text-h6">
           {{ Exercise.taskDescription }}
-        </v-card-title>
+        </v-card-text>
         <v-card-text class="Content">
           <div class="video">
             <v-container>
@@ -39,9 +39,9 @@
         </v-card-text>
       </v-card>
       <v-card v-else>
-        <v-card-title>
+        <v-card-text class="text-h6">
           {{ Exercise.taskDescription }}
-        </v-card-title>
+        </v-card-text>
         <div v-if="exerciseFinished">
           <v-container>
             <span v-html="resultText"></span>
@@ -88,7 +88,6 @@
     </v-container>
   </div>
 </template>
-
 <script setup>
 import { ref, onMounted } from "vue";
 import SingleChoice from "../../components/exercise/single-choice";
