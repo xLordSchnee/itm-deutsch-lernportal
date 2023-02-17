@@ -108,7 +108,7 @@ const resultText = ref('');
 const error = ref(false);
 const errorMessage = ref("");
 const externalLinks = ref([
-  { title: "Das als Artikel", url: "https://youtu.be/7ehiHejhjWk" }
+  { title: "Das/Dass Erklärvideo", url: "https://youtu.be/7ehiHejhjWk" }
 ])
 
 
