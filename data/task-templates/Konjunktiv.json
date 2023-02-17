@@ -1,0 +1,491 @@
+{
+    "taskTitle": "Konjunktiv und Indirekte Rede",
+    "taskDescription": "Konjunktiv I",
+    "tasks": [
+        {
+            "id": "8dd154fd-a6f1-ca0f-e57c-0ebaabff7d22",
+            "type": 0,
+            "title": "Ich wünschte, es _____ ab.",
+            "choices": [
+                {
+                    "id": "c1edbe07-1449-16a1-e2f8-a6ca5f0ea197",
+                    "text": "nähme",
+                    "rightChoice": true
+                },
+                {
+                    "id": "d5af7443-d0e3-7089-7dbf-5b551e5db062",
+                    "text": "nehme",
+                    "rightChoice": false
+                },
+                {
+                    "id": "1b14d1dd-5c8d-88fe-45e4-399da221f391",
+                    "text": "nimmt",
+                    "rightChoice": false
+                }
+            ]
+        },
+        {
+            "id": "63c1d84b-5f98-0f1b-8298-22e0a88b3c0e",
+            "type": 0,
+            "title": "Wenn ich etwas Ruhe hätte, _____ ich mein neues Buch.",
+            "choices": [
+                {
+                    "id": "dafe86b7-9415-26eb-c25e-923b0c8b92ca",
+                    "text": "begönne",
+                    "rightChoice": true
+                },
+                {
+                    "id": "ff57357a-8a4e-9c52-1c25-aa0a32233f2f",
+                    "text": "beginn",
+                    "rightChoice": false
+                },
+                {
+                    "id": "3b0ea87f-75f8-e904-d9a3-577c7970506e",
+                    "text": "begann",
+                    "rightChoice": false
+                }
+            ]
+        },
+        {
+            "id": "fc72e837-a788-ba59-b35d-62639e4c06f7",
+            "type": 0,
+            "title": "Er träumte, Sie _____ ein Meisterwerk.",
+            "choices": [
+                {
+                    "id": "db7c4775-dd7e-0744-e97f-b00ed43c63bf",
+                    "text": "schüfen",
+                    "rightChoice": true
+                },
+                {
+                    "id": "8f2d601f-7ddb-9257-76d4-23237ff0f3f4",
+                    "text": "schafften",
+                    "rightChoice": false
+                },
+                {
+                    "id": "451c9565-c8ed-d7ad-df2e-89564160a98f",
+                    "text": "schaffen",
+                    "rightChoice": false
+                }
+            ]
+        },
+        {
+            "id": "ab92a616-cb02-d35c-c3ca-366fe7c532a6",
+            "type": 0,
+            "title": "Meine Katze ____ nie vor Hunden.",
+            "choices": [
+                {
+                    "id": "1c4e6a5d-a398-67da-4dc7-fcd9c2ee077e",
+                    "text": "flöhe",
+                    "rightChoice": true
+                },
+                {
+                    "id": "c7c9844b-7bc9-14b1-5ecb-b188fb21fe63",
+                    "text": "fliehe",
+                    "rightChoice": false
+                },
+                {
+                    "id": "9434dfd0-3a43-64ce-1fe0-97d35ed87b6a",
+                    "text": "fliehte",
+                    "rightChoice": false
+                }
+            ]
+        },
+        {
+            "id": "aefb683a-807e-c119-38f6-3ed00e6df209",
+            "type": 0,
+            "title": "Welche Verbform steht nicht im Konjunktiv 1?",
+            "choices": [
+                {
+                    "id": "73b04041-8b17-3a0a-02ae-d3bb9a06fabd",
+                    "text": "Du glaubest",
+                    "rightChoice": false
+                },
+                {
+                    "id": "72c1c7e9-9c3e-51cb-e714-3592b9d889f6",
+                    "text": "Er denke",
+                    "rightChoice": false
+                },
+                {
+                    "id": "f16f6a60-f827-da35-f1a3-93c986ca257f",
+                    "text": "Sie findet",
+                    "rightChoice": true
+                }
+            ]
+        },
+        {
+            "id": "2249db97-2b40-5974-8426-8d98260b1024",
+            "type": 0,
+            "title": "Welche Verbform steht nicht im Konjunktiv 1?",
+            "choices": [
+                {
+                    "id": "3bef0685-8d7a-c4cf-e063-6472cfefebc6",
+                    "text": "Ihr vertrauet",
+                    "rightChoice": false
+                },
+                {
+                    "id": "41b48754-5d83-ad6c-9976-a2323eef3a12",
+                    "text": "Du schwimmest",
+                    "rightChoice": false
+                },
+                {
+                    "id": "a9cffdcc-02ab-1462-db13-c3c83557c4e4",
+                    "text": "Er denkt",
+                    "rightChoice": true
+                }
+            ]
+        },
+        {
+            "id": "221d06ff-6478-0470-7876-fe26c4f16141",
+            "type": 0,
+            "title": "Welche Verbform steht nicht im Konjunktiv 1?",
+            "choices": [
+                {
+                    "id": "9ed80921-d12e-c7bb-66e8-0e2bfbc42811",
+                    "text": "Er sei",
+                    "rightChoice": false
+                },
+                {
+                    "id": "498a4383-a08e-4429-2729-1d0bfb15e424",
+                    "text": "Wir seien",
+                    "rightChoice": false
+                },
+                {
+                    "id": "44c8f323-6230-650b-d539-d53e1aba8dab",
+                    "text": "Du bist",
+                    "rightChoice": true
+                }
+            ]
+        },
+        {
+            "id": "61570b4e-42cf-2ff8-fc8a-39914120622c",
+            "type": 2,
+            "title": "Setze die Verben im Konjunktiv 1 ein.",
+            "gaps": "Mark dachte, ihr {{1}} (sein) ein Team.",
+            "choices": [
+                {
+                    "1": "seiet"
+                }
+            ]
+        },
+        {
+            "id": "a625b514-a123-adb4-08ef-f4d4d6e0d543",
+            "type": 2,
+            "title": "Setze die Verben im Konjunktiv 1 ein.",
+            "gaps": "Es {{1}} (leben) die Revolution!",
+            "choices": [
+                {
+                    "1": "lebe"
+                }
+            ]
+        },
+        {
+            "id": "317c75c6-3791-8d53-fe5b-14aca88d0bf8",
+            "type": 2,
+            "title": "Setze die Verben im Konjunktiv 1 ein.",
+            "gaps": "Meine Eltern sagen, ich {{1}} (sein) sehr begabt.",
+            "choices": [
+                {
+                    "1": "sei"
+                }
+            ]
+        },
+        {
+            "id": "ec476c40-1506-42d0-06e1-b16e67986599",
+            "type": 2,
+            "title": "Setze die Verben im Konjunktiv 1 ein.",
+            "gaps": "Mark glaubt, du {{1}} (sein) zuhause.",
+            "choices": [
+                {
+                    "1": "seist"
+                }
+            ]
+        },
+        {
+            "id": "1647e05b-7dca-ced0-51bd-6c7acd6d52f1",
+            "type": 2,
+            "title": "Setze die Verben im Konjunktiv 1 ein.",
+            "gaps": "Peter und Osman glauben, wir {{1}} (sein) ein Paar.",
+            "choices": [
+                {
+                    "1": "seien"
+                }
+            ]
+        },
+        {
+            "id": "fd918887-0426-82ca-c4ce-2e6df7d6bbb6",
+            "type": 2,
+            "title": "Setze die Verben im Konjunktiv 1 ein.",
+            "gaps": "Er befürchtete, er {{1}} (sein) durch die Prüfung gefallen.",
+            "choices": [
+                {
+                    "1": "sei"
+                }
+            ]
+        },
+        {
+            "id": "8ca41fd9-0497-f1fb-2a86-d175448739de",
+            "type": 2,
+            "title": "Setze die Verben im Konjunktiv 1 ein.",
+            "gaps": "Man {{1}} (nehmen) 2 Eier, 300g Mehl und 250g Zucker.",
+            "choices": [
+                {
+                    "1": "nehme"
+                }
+            ]
+        },
+        {
+            "id": "ae7466e8-1519-1706-4604-f9337f00e95e",
+            "type": 0,
+            "title": "Er sei bereits unterwegs.",
+            "choices": [
+                {
+                    "id": "fe131c93-0b26-de97-92d2-80b43fa7fc6a",
+                    "text": "Konjunktiv 2",
+                    "rightChoice": false
+                },
+                {
+                    "id": "3311c00e-1e8a-4288-f80b-58638c552570",
+                    "text": "Konjunktiv 1",
+                    "rightChoice": true
+                }
+            ]
+        },
+        {
+            "id": "9e94d635-1ee3-84a3-fd0a-e47bd373dc66",
+            "type": 0,
+            "title": "Wie wäre es mit einem Kuchen?",
+            "choices": [
+                {
+                    "id": "9ab04f9e-b1bf-85b8-20a3-7025513acf56",
+                    "text": "Konjunktiv 1",
+                    "rightChoice": false
+                },
+                {
+                    "id": "a0b75aa6-4c49-332b-6e18-e254da69e76f",
+                    "text": "Konjunktiv 2",
+                    "rightChoice": true
+                }
+            ]
+        },
+        {
+            "id": "c67ea7ff-cbcc-15e6-2b3a-f5d427bf0fc7",
+            "type": 0,
+            "title": "Wo kommen wir denn da hin? ",
+            "choices": [
+                {
+                    "id": "d7a3bc83-6d90-59c5-7ee6-062794becf64",
+                    "text": "Konjunktiv 1",
+                    "rightChoice": false
+                },
+                {
+                    "id": "acb0180e-28fe-3e7a-057f-1695e421b355",
+                    "text": "Konjunktiv 2",
+                    "rightChoice": true
+                }
+            ]
+        },
+        {
+            "id": "4a6940b9-80ae-497c-3407-f2e160e19659",
+            "type": 0,
+            "title": "Der Regen würde sie beim Joggen nicht stören ",
+            "choices": [
+                {
+                    "id": "72fc0eed-1a5b-03af-a407-171c420d7cd9",
+                    "text": "Konjunktiv 1",
+                    "rightChoice": false
+                },
+                {
+                    "id": "1b536d7b-a8df-efa9-01c0-9991bde8ae22",
+                    "text": "Konjunktiv 2",
+                    "rightChoice": true
+                }
+            ]
+        },
+        {
+            "id": "451d6d6b-937d-a57e-37b3-3111da2b7995",
+            "type": 0,
+            "title": "Hättest du dir im Unterricht bloß Notizen gemacht",
+            "choices": [
+                {
+                    "id": "7cbdfb92-0f1a-4f7c-a83a-02d326b9204c",
+                    "text": "Konjunktiv 1",
+                    "rightChoice": false
+                },
+                {
+                    "id": "793e997b-236f-a1a6-eac3-f1bf9567a082",
+                    "text": "Konjunktiv 2",
+                    "rightChoice": true
+                }
+            ]
+        },
+        {
+            "id": "85034218-daba-042b-40b3-707bd5234f0e",
+            "type": 0,
+            "title": "Nun seien wir doch mal ehrlich.",
+            "choices": [
+                {
+                    "id": "8ff4618c-1e77-187b-e142-eb5c0812973d",
+                    "text": "Konjunktiv 2",
+                    "rightChoice": false
+                },
+                {
+                    "id": "936338ff-a249-ace8-96ea-a889bd25141f",
+                    "text": "Konjunktiv 1",
+                    "rightChoice": true
+                }
+            ]
+        },
+        {
+            "id": "bc07b0ae-a805-58d1-0f2b-964e827a02f3",
+            "type": 0,
+            "title": "Könntest du mir mit der Arbeit helfen?",
+            "choices": [
+                {
+                    "id": "8044a603-f3b8-6710-3950-2851fc78865e",
+                    "text": "Konjunktiv 1",
+                    "rightChoice": false
+                },
+                {
+                    "id": "64fd906e-d0d7-13bf-d4b9-ce72118fc9a1",
+                    "text": "Konjunktiv 2",
+                    "rightChoice": true
+                }
+            ]
+        },
+        {
+            "id": "566f3055-abea-474b-8ed6-94801dc1b8d1",
+            "type": 0,
+            "title": "Der Test sei sehr einfach gewesen",
+            "choices": [
+                {
+                    "id": "8683c731-75a5-5a17-a04a-d9ab1b66ae2d",
+                    "text": "Konjunktiv 2",
+                    "rightChoice": false
+                },
+                {
+                    "id": "bb632186-82df-de05-5ee4-032e9d095dd6",
+                    "text": "Konjunktiv 1",
+                    "rightChoice": true
+                }
+            ]
+        },
+        {
+            "id": "744800e6-a412-e247-25ea-39342d4dd4a4",
+            "type": 0,
+            "title": "Sie sagte, er mache sich zu viele Sorgen.",
+            "choices": [
+                {
+                    "id": "5a6eac37-d56b-1d45-6b23-e8ff245265c6",
+                    "text": "Nein",
+                    "rightChoice": false
+                },
+                {
+                    "id": "c266eccd-3f54-5851-a565-99434a916045",
+                    "text": "Ja",
+                    "rightChoice": true
+                }
+            ]
+        },
+        {
+            "id": "10801919-35b4-8008-d68a-a40b5cad6d23",
+            "type": 0,
+            "title": "Sie sagten, sie gehen morgen ins Kino",
+            "choices": [
+                {
+                    "id": "77d071b1-f62f-ac9e-533a-005d77b24461",
+                    "text": "Ja",
+                    "rightChoice": false
+                },
+                {
+                    "id": "2e17874f-a156-64b3-6f49-38e1f6a70590",
+                    "text": "Nein",
+                    "rightChoice": true
+                }
+            ]
+        },
+        {
+            "id": "2b7f560e-a190-a19d-f27a-7c92a117fed9",
+            "type": 2,
+            "title": "Verwende die Ersatzform sodass die Verwendung des Konjunktivs eindeutig wird. ",
+            "gaps": "Sie sagten, sie {{1}} morgen ins Kino.",
+            "choices": [
+                {
+                    "1": "ginge"
+                }
+            ]
+        },
+        {
+            "id": "b15d2baf-ec50-936e-7aed-538c72ed6b01",
+            "type": 0,
+            "title": "Sie sagt, sie laufe jeden Morgen zur Arbeit.",
+            "choices": [
+                {
+                    "id": "39b36812-1126-a50f-0b2c-4bb404ba79b5",
+                    "text": "Nein",
+                    "rightChoice": false
+                },
+                {
+                    "id": "140c6dda-d689-25bf-d690-6256a48b54a8",
+                    "text": "Ja",
+                    "rightChoice": true
+                }
+            ]
+        },
+        {
+            "id": "18259d48-2efd-5c8b-726c-3a16b2ed93f1",
+            "type": 0,
+            "title": "Sie sagten, sie kommen nicht zur Feier.",
+            "choices": [
+                {
+                    "id": "014d5b2d-3e6a-7998-6593-5fbe596f6d15",
+                    "text": "Ja",
+                    "rightChoice": false
+                },
+                {
+                    "id": "9b92bd34-6a45-d5eb-d978-800b210ee00c",
+                    "text": "Nein",
+                    "rightChoice": true
+                }
+            ]
+        },
+        {
+            "id": "d8ae042e-fa3d-a134-5a01-1bffd42a2322",
+            "type": 2,
+            "title": "Verwende die Ersatzform sodass die Verwendung des Konjunktivs eindeutig wird. ",
+            "gaps": "Sie sagte, sie {{1}} nicht zur Feier.",
+            "choices": [
+                {
+                    "1": "kämen"
+                }
+            ]
+        },
+        {
+            "id": "b98f8b78-c1fd-4daf-7869-4e0368a7d443",
+            "type": 2,
+            "title": "Bilde einen Satz in der indirekten Rede, indem du die Ersatzform mit würde zur Hilfe nimmst.",
+            "gaps": "Klaus behauptet, seine Eltern {{1}}[büken] gerne Kuchen {{2}}[...].",
+            "choices": [
+                {
+                    "1": "würden"
+                },
+                {
+                    "2": "backen"
+                }
+            ]
+        },
+        {
+            "id": "7deef2c6-83c1-fece-d348-6f0c84a60193",
+            "type": 2,
+            "title": "Bilde einen Satz in der indirekten Rede, indem du die Ersatzform mit würde zur Hilfe nimmst.",
+            "gaps": "Er sagte, Mia und Tobi {{1}}[empfählen] den Film nicht {{2}}[...].",
+            "choices": [
+                {
+                    "1": "würden"
+                },
+                {
+                    "2": "weiterempfehlen"
+                }
+            ]
+        }
+    ]
+}   

@@ -22,11 +22,11 @@ export default {
                 icon: 'mdi-alpha-d-circle',
                 url: '/das-dass'
               },
-              {
-                title: 'Groß und Kleinschreibung',
-                icon: 'mdi-select-all',
-                url: '/gross-klein'
-              },
+              // {
+              //   title: 'Groß und Kleinschreibung',
+              //   icon: 'mdi-select-all',
+              //   url: '/gross-klein'
+              // },
               {
                 title: 'Zusammen und Getrenntschreibung',
                 icon: 'mdi-arrow-expand-horizontal',
@@ -62,16 +62,16 @@ export default {
                 icon: 'mdi-link',
                 url: '/konjunktionen'
               },
-              {
-                title: 'Pronomen',
-                icon: 'mdi-account-supervisor',
-                url: '/pronomen'
-              },
-              {
-                title: 'Nicht flektierbare Wortarten',
-                icon: 'mdi-autorenew-off',
-                url: '/nicht-flektierbare-wortarten'
-              }
+              // {
+              //   title: 'Pronomen',
+              //   icon: 'mdi-account-supervisor',
+              //   url: '/pronomen'
+              // },
+              // {
+              //   title: 'Nicht flektierbare Wortarten',
+              //   icon: 'mdi-autorenew-off',
+              //   url: '/nicht-flektierbare-wortarten'
+              // }
             ]
         }
     }
