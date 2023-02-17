@@ -1,260 +1,198 @@
 <template>
-  <v-container class="mx-auto" style="max-width:750px;">
-    <v-card>
-      <v-card-title>Thema Zeitformen</v-card-title>
-      <v-card-text class="Content">
-        beschreibung
-        <div class="video">
-          <ExerciseExternalLink url="https://bwvkrborde-my.sharepoint.com/personal/koll132756_students_bwv-ahaus_de/_layouts/15/stream.aspx?id=%2Fpersonal%2Fkoll132756_students_bwv-ahaus_de%2FDocuments%2FAnlagen%2Fsimpleshow_Zeitformen_in_der_deutschen_Sprache%2Emp4&ga=1" title="Zeitformen Video"></ExerciseExternalLink>
-        </div>
-      </v-card-text>
+  <div class="container">
+    <div class="text-center">
+      <v-dialog v-model="error" width="auto">
+        <v-card>
+          <v-card-text>
+            {{ errorMessage }}
+          </v-card-text>
+          <v-card-actions>
+            <v-btn color="primary" block @click="error = false">Close Dialog</v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
+    </div>
+
+    <v-container class="mx-auto" style="width: auto">
+      <v-card v-if="!showTasks">
+        <v-card-title>
+          <h1>{{ Exercise.taskTitle }}</h1>
+        </v-card-title>
+        <v-card-text>
+          <h3>{{ Exercise.taskDescription }}</h3>
+        </v-card-text>
+        <v-card-text class="Content">
+          <div class="video">
+            <v-container>
+              <v-for :key="externalLink" v-for="externalLink in externalLinks">
+                <v-row>
+                  <ExerciseExternalLink :url="externalLink.url" :title="externalLink.title">
+                  </ExerciseExternalLink>
+                </v-row>
+              </v-for>
+            </v-container>
+          </div>
+          <div>
+            <v-btn @click="showTasks = true" color="success" class="right-button">Aufgaben anzeigen</v-btn>
+          </div>
+        </v-card-text>
       </v-card>
-      <div class="zeitform-content">
-        <div class="zeitform">
-            <h2> Zeit	Tempus	Beispiel</h2>
-            Gegenwart	Präsens	Du läufst den Berg hoch.
-            Vergangenheit	Präteritum
-            Perfekt
-            Plusquamperfekt	Sie lief den Berg hoch.
-            Wir sind den Berg hochgelaufen.
-            Wir waren den Berg hochgelaufen.
-            Zukunft	Futur I
-            Futur II	Du wirst den Berg hochlaufen.
-            Du wirst den Berg hochgelaufen sein.
+      <v-card v-else>
+        <v-card-title>
+          <h1>{{ Exercise.taskTitle }}</h1>
+        </v-card-title>
+        <v-card-text>
+          <h3>{{ Exercise.taskDescription }}</h3>
+        </v-card-text>
+        <div v-if="exerciseFinished">
+          <v-container>
+            <span v-html="resultText"></span>
+            <v-btn @click="$router.go()" class="right-button" color="success">Neustart</v-btn>
+          </v-container>
         </div>
-        <div class="zeitform">
-            <h2>Präsens:
-
-            Bildung:</h2>
-
-            <h3>Regelmäßige Verben</h3>
-            •	Verb + en
-            •	Beispiele: arbeiten > arbeite, machen > mache
-
-            <h3>Unregelmäßige Verben</h3>
-            •	Keine feste Endung
-            •	Beispiele: sein > bin, haben > habe, gehen > gehe
-            Modalverben
-            •	Verb (eigne Form)
-            •	Beispiele: müssen > muss, können > kann, wollen > will
-
+        <div v-else>
+          <v-card-text v-if="!loading">
+            <template v-if="Exercise.tasks[page - 1].type == 0">
+              <SingleChoice :task="Exercise.tasks[page - 1]" :lastPage="page + 1 > Exercise.tasks.length"
+                :callback="(correct) => submit(correct)">
+              </SingleChoice>
+            </template>
+            <template v-else-if="Exercise.tasks[page - 1].type == 1">
+              <MultipleChoice :task="Exercise.tasks[page - 1]" :lastPage="page + 1 > Exercise.tasks.length"
+                :callback="(correct) => submit(correct)"></MultipleChoice>
+            </template>
+            <template v-else-if="Exercise.tasks[page - 1].type == 2">
+              <GapText :task="Exercise.tasks[page - 1]" :lastPage="page + 1 > Exercise.tasks.length"
+                :callback="(correct) => submit(correct)"></GapText>
+            </template>
+            <template v-else-if="Exercise.tasks[page - 1].type == 3">
+              <GapText :task="Exercise.tasks[page - 1]" :lastPage="page + 1 > Exercise.tasks.length"
+                :callback="(correct) => submit(correct)"></GapText>
+            </template>
+            <template v-else>
+              Error
+            </template>
+          </v-card-text>
+          <v-card-text v-else>
+            Loading...
+          </v-card-text>
+          <v-container v-if="allTaskCompleted">
+            <v-btn color="danger" @click="page = 1">Aufgaben erneut angucken</v-btn>
+            <v-btn color="warning" @click="finishExercise" class="right-button">Finish Exercise</v-btn>
+          </v-container>
         </div>
-        <div class="zeitform">
-            <h2>Präteritum:
+      </v-card>
 
-            Bildung:</h2>
-            <h3>Regelmäßige Verben</h3>
-            •	Verb + -te –tet
-            •	Beispiel: arbeiten > arbeitete, machen > machte
-
-            <h3>Unregelmäßige Verben</h3>
-            •	Verb + keine feste Endung
-            •	Beispiele: sein > war, haben > hatte, gehen > ging
-
-            <h3>Modalverben</h3>
-            •	Verb (eigne Form)
-            •	müssen > musste, können > konnte, wollen > wollte
-
-        </div>
-        <div class="zeitform">
-            <h2>Perfekt (vollendete Gegenwartsform)</h2>
-            Die Zeitform Perfekt ist eine Vergangenheitsform, womit man Ereignisse beschreibt, die vor kurzem stattgefunden haben. obwohl Ereignisse im Perfekt bereits abgeschlossen sind, haben sie noch Auswirkungen auf die Gegenwart. Deswegen nennst du das Perfekt im Deutsch auch vollendete Gegenwart.
-            So sieht es in der Praxis aus:
-
-            o	Mit dem Perfekt wird über Ereignisse bzw. Handlungen gesprochen, die zwar abgeschlossen sind, dennoch aber auf die Gegenwart wirken.
-            Welcher Satz ist richtig?
-            1.	Gestern ging ich pünktlich zur Schule.
-            2.	Gestern bin ich pünktlich zur Schule gegangen. |Richtig|
-        </div>
-        <div class="zeitform">
-            <h2>Partizip II
-            Bildung:</h2>
-            •	Bei regelmäßigen (schwachen) Verben: ge + Verbstamm + (e)t
-            •	Kochen - Was hast du gekocht?
-            •	Bei unregelmäßigen (starken) Verben: ge + (veränderter) Verbstamm + en
-            •	Laufen - Er ist gelaufen.
-        </div>
-        <div class="zeitform">
-            <h2>Plusquamperfekt</h2>
-            (Vorvergangenheit / vollendete Vergangenheit)
-
-            Es geht um Ereignisse, welche vor einem vergangenen Ereignis stattgefunden haben.
-            Deswegen oft in Verbindung mit Präteritum oder Perfekt.
-
-            <h3>Bilden des Plusquamperfekts:</h3>
-            Haben oder sein (Präteritum) + Partizip II
-
-            <h3>Beispiel:</h3>
-            •	 Ich war mit dem Auto gefahren, bevor ich die Frau anfuhr.
-            •	Bevor ich iDeutsch Zeitformen
-            Zeit	Tempus	Beispiel
-            Gegenwart	Präsens	Du läufst den Berg hoch.
-            Vergangenheit	Präteritum
-            Perfekt
-            Plusquamperfekt	Sie lief den Berg hoch.
-            Wir sind den Berg hochgelaufen.
-            Wir waren den Berg hochgelaufen.
-            Zukunft	Futur I
-            Futur II	Du wirst den Berg hochlaufen.
-            Du wirst den Berg hochgelaufen sein.
-
-        </div>
-        <div class="zeitform">
-            <h2>Präsens:
-
-            Bildung:</h2>
-
-            <h3>Regelmäßige Verben</h3>
-            •	Verb + en
-            •	Beispiele: arbeiten > arbeite, machen > mache
-
-            <h3>Unregelmäßige Verben</h3>
-            •	Keine feste Endung
-            •	Beispiele: sein > bin, haben > habe, gehen > gehe
-            <h3>Modalverben</h3>
-            •	Verb (eigne Form)
-            •	Beispiele: müssen > muss, können > kann, wollen > will
-
-        </div>
-        <div class="zeitform">
-            <h2>Präteritum:
-
-            Bildung:</h2>
-            <h3>Regelmäßige Verben</h3>
-            •	Verb + -te –tet
-            •	Beispiel: arbeiten > arbeitete, machen > machte
-
-            <h3>Unregelmäßige Verben</h3>
-            •	Verb + keine feste Endung
-            •	Beispiele: sein > war, haben > hatte, gehen > ging
-
-            <h3>Modalverben</h3>
-            •	Verb (eigne Form)
-            •	müssen > musste, können > konnte, wollen > wollte
-        </div>
-        <div class="zeitform">
-            <h2>Perfekt (vollendete Gegenwartsform)</h2>
-            Die Zeitform Perfekt ist eine Vergangenheitsform, womit man Ereignisse beschreibt, die vor kurzem stattgefunden haben. obwohl Ereignisse im Perfekt bereits abgeschlossen sind, haben sie noch Auswirkungen auf die Gegenwart. Deswegen nennst du das Perfekt im Deutsch auch vollendete Gegenwart.
-            So sieht es in der Praxis aus:
-
-            •	Mit dem Perfekt wird über Ereignisse bzw. Handlungen gesprochen, die zwar abgeschlossen sind, dennoch aber auf die Gegenwart wirken.
-            Welcher Satz ist richtig?
-            1.	Gestern ging ich pünktlich zur Schule.
-            2.	Gestern bin ich pünktlich zur Schule gegangen. |Richtig|
-
-        </div>
-        <div class="zeitform">
-            <h2>Partizip II
-            Bildung:</h2>
-            •	Bei regelmäßigen (schwachen) Verben: ge + Verbstamm + (e)t
-            •	Kochen - Was hast du gekocht?
-            •	Bei unregelmäßigen (starken) Verben: ge + (veränderter) Verbstamm + en
-            •	Laufen - Er ist gelaufen.
-        </div>
-        <div class="zeitform">
-            <h2>Plusquamperfekt</h2>
-            (Vorvergangenheit / vollendete Vergangenheit)
-
-            Es geht um Ereignisse, welche vor einem vergangenen Ereignis stattgefunden haben.
-            Deswegen oft in Verbindung mit Präteritum oder Perfekt.
-
-            Bilden des Plusquamperfekts:
-            Haben oder sein (Präteritum) + Partizip II
-
-            <h3>Beispiel:</h3>
-            •	 Ich war mit dem Auto gefahren, bevor ich die Frau anfuhr.
-            •	Bevor ich ins Restaurant ging, hatte ich Geld abgehoben.
-
-        </div>
-        <div class="zeitform">
-            <h2>Futur I
-            (Einfache Zukunft)</h2>
-
-            Es können hiermit Aussagen über die Zukunft getroffen werden.
-
-            <h3>Bilden von Futur I:</h3>
-            Werden + Infinitiv (Grundform)
-
-            <h3>Beispiel:</h3>
-            •	Ich werde Brot kaufen.
-            •	Du wirst einen Kopfstand machen.
-
-        </div>
-        <div class="zeitform">
-            <h2>Futur II</h2>
-            (Vollendete Zukunft)
-
-            Es geht um Dinge, die in der Zukunft abgeschlossen sein werden.
-
-            <h3>Bilden von Futur II:</h3>
-            Werden + Partizip II + haben oder sein
-
-            <h3>Beispiel:</h3>
-            •	 Du wirst im Gefängnis gesessen haben.
-            •	Ich werde einen Computer gekauft haben.
-            ns Restaurant ging, hatte ich Geld abgehoben.
-        </div>
-        <div class="zeitform">
-            <h2>Futur I
-            (Einfache Zukunft)</h2>
-
-            Es können hiermit Aussagen über die Zukunft getroffen werden.
-
-            <h3>Bilden von Futur I:</h3>
-            Werden + Infinitiv (Grundform)
-
-            <h3>Beispiel:</h3>
-            •	Ich werde Brot kaufen.
-            •	Du wirst einen Kopfstand machen.
-        </div>
-        <div class="zeitform">
-
-            <h2>Futur II
-            (Vollendete Zukunft)</h2>
-
-            Es geht um Dinge, die in der Zukunft abgeschlossen sein werden.
-
-            <h3>Bilden von Futur II:</h3>
-            Werden + Partizip II + haben oder sein
-
-            <h3>Beispiel:</h3>
-            •	 Du wirst im Gefängnis gesessen haben.
-            •	Ich werde einen Computer gekauft haben.
-        </div>
-
-      </div>
-
-
-    <!--    <img class="img_rick" src="assets/Rick.png" height="300px"/>-->
-  </v-container>
+      <!--    <img class="img_rick" src="assets/Rick.png" height="300px"/>-->
+    </v-container>
+    <v-container class="pagination-container" v-if="Exercise.tasks.length >= 2 && !exerciseFinished && showTasks">
+      <v-pagination class="pagination" v-model="page" :length="Exercise.tasks.length" :total-visible="5"></v-pagination>
+    </v-container>
+  </div>
 </template>
 
-<script>
+<script setup>
+import { ref, onMounted } from "vue";
+import SingleChoice from "../../components/exercise/single-choice";
 import MultipleChoice from "../../components/exercise/multiple-choice";
 import GapText from "../../components/exercise/gap-text";
-import SingleChoice from "../../components/exercise/single-choice";
-import ExternalLink from "../../scripts/components/exercise/external-link";
-export default {
-  name: "index",
-  data() {
-    return {
-      exercise: {
-        default: Object,
-        type: Object
-      }
-    }
-  },
-  mounted() {
-    this.getExercise()
-  },
-  methods: {
-    getExercise() {
-      //TODO: get exercise-object from json & save object to exercise
-    }
+import ExternalLink from "../../components/exercise/external-link";
+
+import Exercise from "../../data/task-templates/Aufgaben_Zeitformen.json"
+
+const showTasks = ref(false);
+const loading = ref(true);
+const allTaskCompleted = ref(false);
+const page = ref(Exercise.tasks.length);
+const exerciseFinished = ref(false)
+const results = ref({});
+const resultText = ref('');
+const error = ref(false);
+const errorMessage = ref("");
+const externalLinks = ref([
+  { title: "Zeitformen Video", url: "https://bwvkrborde-my.sharepoint.com/personal/koll132756_students_bwv-ahaus_de/_layouts/15/stream.aspx?id=%2Fpersonal%2Fkoll132756_students_bwv-ahaus_de%2FDocuments%2FAnlagen%2Fsimpleshow_Zeitformen_in_der_deutschen_Sprache%2Emp4&ga=1" },
+  { title: "Wichtige Informationen", url: "https://bwvkrborde-my.sharepoint.com/:w:/g/personal/koll132756_students_bwv-ahaus_de/EbNLzWvvIYtCqSvTe5kuWQEB0Q1P5vt9azhDCDQnHDn2EQ?e=3e9hYf" }
+])
+
+
+function showError(message) {
+  errorMessage.value = message;
+  error.value = true;
+}
+
+
+function finishExercise() {
+  //check if all tasks has been completed
+  if (Object.keys(results.value).length == Exercise.tasks.length) {
+    showResults();
+  } else {
+    showError("Nicht alle Aufgbaben sind erledigt!");
+    return;
   }
 }
+
+function showResults() {
+  var text = "";
+  for (var resultKey in results.value) {
+    var result = results.value[resultKey];
+    var string = "Seite " + (result.page) + ": ";
+    var isCorrect = (result.wasCorrect) ? "Richtig" : "Falsch";
+    string += isCorrect + "<br>";
+    text += string + "\n";
+  }
+
+  resultText.value = text;
+  exerciseFinished.value = true;
+}
+
+function submit(answer) {
+  var task = Exercise.tasks[page.value - 1];
+  results.value[task.id] = {
+    id: task.id,
+    page: page.value,
+    wasCorrect: answer,
+    task: task
+  }
+  if (Object.keys(results.value).length == Exercise.tasks.length) {
+    allTaskCompleted.value = true;
+  } else {
+    page.value++;
+  }
+
+}
+onMounted(() => {
+  if (loading.value) {
+    page.value = 1;
+  }
+  loading.value = false;
+})
 </script>
 
-<style scoped>
+<style>
+.container {
+  margin: 50px 0 0 100px;
+}
 
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.pagination-container * {
+  z-index: 9999;
+}
+
+.pagination {
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  margin: 0 auto 10px auto;
+  z-index: 9999;
+}
+
+.right-button {
+  float: right;
+  bottom: 15px;
+}
 </style>

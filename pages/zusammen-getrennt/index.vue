@@ -1,13 +1,3 @@
-<!--<v-card>-->
-<!--<v-card-title>Thema Zusammen und Getrenntschreibung Leon Dankbar</v-card-title>-->
-<!--<v-card-text class="Content">-->
-<!--  beschreibung-->
-<!--  <div class="video">-->
-<!--    <ExerciseExternalLink url="https://leon-dankbar.de/misc/school/Zusammenschreiben_und_Getrenntschreiben_720p_V3.mp4" title="Video"></ExerciseExternalLink>-->
-<!--  </div>-->
-<!--</v-card-text>-->
-<!--</v-card>-->
-
 <template>
   <div class="container">
     <div class="text-center">
@@ -23,14 +13,41 @@
       </v-dialog>
     </div>
 
-    <v-container class="mx-auto" style="max-width:750px;">
-      <v-card>
-        <v-card-title>{{ Exercise.taskTitle }}</v-card-title>
-        <v-card-text>{{ Exercise.taskDescription }}</v-card-text>
+    <v-container class="mx-auto" style="width: auto">
+      <v-card v-if="!showTasks">
+        <v-card-title>
+          <h1>{{ Exercise.taskTitle }}</h1>
+        </v-card-title>
+        <v-card-text>
+          <h3>{{ Exercise.taskDescription }}</h3>
+        </v-card-text>
+        <v-card-text class="Content">
+          <div class="video">
+            <v-container>
+              <v-for :key="externalLink" v-for="externalLink in externalLinks">
+                <v-row>
+                  <ExerciseExternalLink :url="externalLink.url" :title="externalLink.title">
+                  </ExerciseExternalLink>
+                </v-row>
+              </v-for>
+            </v-container>
+          </div>
+          <div>
+            <v-btn @click="showTasks = true" color="success" class="right-button">Aufgaben anzeigen</v-btn>
+          </div>
+        </v-card-text>
+      </v-card>
+      <v-card v-else>
+        <v-card-title>
+          <h1>{{ Exercise.taskTitle }}</h1>
+        </v-card-title>
+        <v-card-text>
+          <h3>{{ Exercise.taskDescription }}</h3>
+        </v-card-text>
         <div v-if="exerciseFinished">
           <v-container>
             <span v-html="resultText"></span>
-            <v-btn @click="this.$router.go(this.$router.currentRoute)" class="right-button" color="success">Neustart</v-btn>
+            <v-btn @click="$router.go()" class="right-button" color="success">Neustart</v-btn>
           </v-container>
         </div>
         <div v-else>
@@ -61,13 +78,14 @@
           </v-card-text>
           <v-container v-if="allTaskCompleted">
             <v-btn color="danger" @click="page = 1">Aufgaben erneut angucken</v-btn>
-            <v-btn color="warning" @click="finishExercise">Finish Exercise</v-btn>
+            <v-btn color="warning" @click="finishExercise" class="right-button">Finish Exercise</v-btn>
           </v-container>
         </div>
       </v-card>
+
       <!--    <img class="img_rick" src="assets/Rick.png" height="300px"/>-->
     </v-container>
-    <v-container class="pagination-container" v-if="Exercise.tasks.length >= 2 && !exerciseFinished">
+    <v-container class="pagination-container" v-if="Exercise.tasks.length >= 2 && !exerciseFinished && showTasks">
       <v-pagination class="pagination" v-model="page" :length="Exercise.tasks.length" :total-visible="5"></v-pagination>
     </v-container>
   </div>
@@ -78,9 +96,11 @@ import { ref, onMounted } from "vue";
 import SingleChoice from "../../components/exercise/single-choice";
 import MultipleChoice from "../../components/exercise/multiple-choice";
 import GapText from "../../components/exercise/gap-text";
+import ExternalLink from "../../components/exercise/external-link";
 
 import Exercise from "../../data/task-templates/zusammen-getrennt.json"
 
+const showTasks = ref(false);
 const loading = ref(true);
 const allTaskCompleted = ref(false);
 const page = ref(Exercise.tasks.length);
@@ -89,6 +109,9 @@ const results = ref({});
 const resultText = ref('');
 const error = ref(false);
 const errorMessage = ref("");
+const externalLinks = ref([
+  { title: "Video", url: "https://leon-dankbar.de/misc/school/Zusammenschreiben_und_Getrenntschreiben_720p_V3.mp4" }
+]);
 
 
 function showError(message) {
@@ -134,7 +157,7 @@ function submit(answer) {
   } else {
     page.value++;
   }
-  
+
 }
 onMounted(() => {
   if (loading.value) {
@@ -144,7 +167,7 @@ onMounted(() => {
 })
 </script>
 
-<style scoped>
+<style>
 .container {
   margin: 50px 0 0 100px;
 }
@@ -165,5 +188,10 @@ onMounted(() => {
   bottom: 0px;
   margin: 0 auto 10px auto;
   z-index: 9999;
+}
+
+.right-button {
+  float: right;
+  bottom: 15px;
 }
 </style>

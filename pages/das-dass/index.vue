@@ -13,27 +13,41 @@
       </v-dialog>
     </div>
 
-    <v-container class="mx-auto" style="max-width:750px;">
+    <v-container class="mx-auto" style="width: auto">
       <v-card v-if="!showTasks">
-        <v-card-title><h1>{{ Exercise.taskTitle }}</h1></v-card-title>
-        <v-card-text><h3>{{ Exercise.taskDescription }}</h3></v-card-text>
+        <v-card-title>
+          <h1>{{ Exercise.taskTitle }}</h1>
+        </v-card-title>
+        <v-card-text>
+          <h3>{{ Exercise.taskDescription }}</h3>
+        </v-card-text>
         <v-card-text class="Content">
           <div class="video">
-            <ExerciseExternalLink url="https://youtu.be/7ehiHejhjWk" title="Das als Artikel"></ExerciseExternalLink>
+            <v-container>
+              <v-for :key="externalLink" v-for="externalLink in externalLinks">
+                <v-row>
+                  <ExerciseExternalLink :url="externalLink.url" :title="externalLink.title">
+                  </ExerciseExternalLink>
+                </v-row>
+              </v-for>
+            </v-container>
           </div>
           <div>
-            <v-btn @click="showTasks = true">Aufgaben anzeigen</v-btn>
+            <v-btn @click="showTasks = true" color="success" class="right-button">Aufgaben anzeigen</v-btn>
           </div>
         </v-card-text>
       </v-card>
       <v-card v-else>
-        <v-card-title><h1>{{ Exercise.taskTitle }}</h1></v-card-title>
-        <v-card-text><h3>{{ Exercise.taskDescription }}</h3></v-card-text>
+        <v-card-title>
+          <h1>{{ Exercise.taskTitle }}</h1>
+        </v-card-title>
+        <v-card-text>
+          <h3>{{ Exercise.taskDescription }}</h3>
+        </v-card-text>
         <div v-if="exerciseFinished">
           <v-container>
             <span v-html="resultText"></span>
-            <v-btn @click="this.$router.go(this.$router.currentRoute)" class="right-button"
-              color="success">Neustart</v-btn>
+            <v-btn @click="$router.go()" class="right-button" color="success">Neustart</v-btn>
           </v-container>
         </div>
         <div v-else>
@@ -71,7 +85,7 @@
 
       <!--    <img class="img_rick" src="assets/Rick.png" height="300px"/>-->
     </v-container>
-    <v-container class="pagination-container" v-if="Exercise.tasks.length >= 2 && !exerciseFinished">
+    <v-container class="pagination-container" v-if="Exercise.tasks.length >= 2 && !exerciseFinished && showTasks">
       <v-pagination class="pagination" v-model="page" :length="Exercise.tasks.length" :total-visible="5"></v-pagination>
     </v-container>
   </div>
@@ -82,6 +96,7 @@ import { ref, onMounted } from "vue";
 import SingleChoice from "../../components/exercise/single-choice";
 import MultipleChoice from "../../components/exercise/multiple-choice";
 import GapText from "../../components/exercise/gap-text";
+import ExternalLink from "../../components/exercise/external-link";
 
 import Exercise from "../../data/task-templates/dasDass.json"
 
@@ -94,6 +109,9 @@ const results = ref({});
 const resultText = ref('');
 const error = ref(false);
 const errorMessage = ref("");
+const externalLinks = ref([
+  { title: "Das als Artikel", url: "https://youtu.be/7ehiHejhjWk" }
+])
 
 
 function showError(message) {

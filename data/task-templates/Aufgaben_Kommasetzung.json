@@ -1,0 +1,443 @@
+{
+  "taskTitle": "Kommasetzung",
+  "taskDescription": "Mit dem Komma trennst du Teile eines Satzes voneinander ab. Damit werden deine Sätze übersichtlicher, sodass jeder sie lesen und verstehen kann. Kommaregeln verraten dir, wann du Satzteile mit einem Komma abgrenzt.",
+  "tasks": [
+    {
+      "id": "d77e3f80-a30b-419f-8ce9-522db437272f",
+      "type": 0,
+      "title": "Kommasetzung bei Appositionen und Erläuterungen",
+      "choices": [
+        {
+          "id": "67843995-55c0-4012-97d8-a290dd0c2226",
+          "text": "Mein bester Freund, ein begnadeter Musiker, hat mir gestern sein neues Album gezeigt.",
+          "rightChoice": true
+        },
+        {
+          "id": "956eb0df-02cb-4ea2-8d79-94f54b0c9f89",
+          "text": "Mein bester Freund ein begnadeter Musiker hat mir gestern sein neues Album gezeigt.",
+          "rightChoice": false
+        },
+        {
+          "id": "56e6fbbc-db56-464c-a956-8b29e6ebacd6",
+          "text": "Mein bester Freund, ein begnadeter Musiker hat mir gestern sein neues Album gezeigt.",
+          "rightChoice": false
+        }
+      ],
+      "hint": ""
+    },
+    {
+      "id": "b35ca28d-2a22-4494-be05-a7abe75e5829",
+      "type": 0,
+      "title": "Kommasetzung bei Appositionen und Erläuterungen",
+      "choices": [
+        {
+          "id": "91e319b6-132c-49d7-8d95-514184e2ffb3",
+          "text": "Unser Trainer der neue deutsche Meister im Schwergewicht hat uns heute besucht.",
+          "rightChoice": false
+        },
+        {
+          "id": "fe33f140-d941-47ff-8843-5b941d82ffe2",
+          "text": "Unser Trainer, der neue deutsche Meister im Schwergewicht, hat uns heute besucht.",
+          "rightChoice": true
+        },
+        {
+          "id": "084a7fa3-2485-4560-99e8-a321efe3a9c2",
+          "text": "Unser Trainer, der neue deutsche Meister im Schwergewicht hat uns heute besucht.",
+          "rightChoice": false
+        }
+      ],
+      "hint": ""
+    },
+    {
+      "id": "5d6c01dd-dcfd-438b-845b-daf6315e864b",
+      "type": 1,
+      "title": "Appositionen und Erläuterungen",
+      "choices": [
+        {
+          "id": "cc59f688-5929-4fed-a3aa-6bc3bb772301",
+          "text": "Die Stadt, mit einer Bevölkerung von über einer Million Menschen, ist sehr belebt.",
+          "rightChoice": true
+        },
+        {
+          "id": "2566051d-240e-4e0e-878d-1099cfe13c45",
+          "text": "Die Stadt mit einer Bevölkerung von über einer Million Menschen ist sehr belebt.",
+          "rightChoice": false
+        },
+        {
+          "id": "507ad17d-5a8d-4e49-b2a6-d9d4c9b4d392",
+          "text": "Das Buch, geschrieben von einem berühmten Autor, hat einen Preis gewonnen.",
+          "rightChoice": true
+        },
+        {
+          "id": "04c936b5-962d-448d-9eec-b7e40309303f",
+          "text": "Das Buch geschrieben von einem berühmten Autor hat einen Preis gewonnen.",
+          "rightChoice": false
+        }
+      ],
+      "hint": ""
+    },
+    {
+      "id": "e455112c-7601-4e78-b9ae-634dddd5d632",
+      "type": 1,
+      "title": "Appositionen und Erläuterungen",
+      "choices": [
+        {
+          "id": "ea268168-36d0-45cd-a712-52df07ceaeb5",
+          "text": "Das Buch, ein Roman von George R.R. Martin, wurde 1996 veröffentlicht.",
+          "rightChoice": true
+        },
+        {
+          "id": "51986b41-9050-4747-954b-ce19e7c69b4e",
+          "text": "Das Buch, ein Roman von George R.R. Martin wurde 1996 veröffentlicht.",
+          "rightChoice": false
+        },
+        {
+          "id": "c144c8af-47b7-42bf-ac3e-ec0fe25e5e21",
+          "text": "Das Buch ein Roman von George R.R. Martin wurde 1996 veröffentlicht.",
+          "rightChoice": false
+        }
+      ],
+      "hint": ""
+    },
+    {
+      "id": "6b5c038d-6706-4628-8cfe-bf28042a22d0",
+      "type": 0,
+      "title": "Kommasetzung bei Aufzählungen",
+      "choices": [
+        {
+          "id": "d7baa667-8989-4a12-ba97-b931eb10fd3f",
+          "text": "Ich brauche noch Äpfel, Bananen, und Orangen, um den Obstsalat zu machen.",
+          "rightChoice": false
+        },
+        {
+          "id": "066202d0-5615-49ff-a751-5683f7ea2fc3",
+          "text": "Ich brauche noch Äpfel, Bananen und Orangen, um den Obstsalat zu machen.",
+          "rightChoice": true
+        },
+        {
+          "id": "b6d36b09-9cde-444d-a5a0-001bd541f832",
+          "text": "Ich brauche noch Äpfel, Bananen und Orangen um den Obstsalat zu machen.",
+          "rightChoice": false
+        }
+      ],
+      "hint": ""
+    },
+    {
+      "id": "4bd6b616-254f-44c4-88ac-92857949f759",
+      "type": 0,
+      "title": "Kommasetzung bei Aufzählungen",
+      "choices": [
+        {
+          "id": "b6841b43-b0b8-4a5a-b489-cb2e0b56c96f",
+          "text": "Ich habe gestern eine rote, eine grüne und eine gelbe Paprika gekauft.",
+          "rightChoice": true
+        },
+        {
+          "id": "59da0eea-b1c0-45f1-9ba6-8c05dfac66cf",
+          "text": "Ich habe gestern eine rote eine grüne und eine gelbe Paprika gekauft.",
+          "rightChoice": false
+        },
+        {
+          "id": "e9363fb9-80fb-4779-b132-f50b705b4c77",
+          "text": "Ich habe gestern eine rote, eine grüne, und eine gelbe Paprika gekauft.",
+          "rightChoice": false
+        }
+      ],
+      "hint": ""
+    },
+    {
+      "id": "3d2cd952-764d-4c86-b3e2-ee46df5efbec",
+      "type": 1,
+      "title": "Kommasetzung bei Aufzählungen",
+      "choices": [
+        {
+          "id": "710c722c-c7a6-4db1-9529-56727eb02c77",
+          "text": "Meine Hobbies sind Musik hören, Gitarre spielen und Fußball spielen.",
+          "rightChoice": true
+        },
+        {
+          "id": "1c3c5571-c024-4ef3-b369-1f69b978e243",
+          "text": "Meine Hobbies sind Musik hören Gitarre spielen und Fußball spielen.",
+          "rightChoice": false
+        },
+        {
+          "id": "8b5ca2a9-71cf-46ed-b431-5ab81d78a183",
+          "text": "Meine Hobbies sind Musik hören, Gitarre spielen, und Fußball spielen.",
+          "rightChoice": false
+        },
+        {
+          "id": "4de2ca01-c1f6-4a18-ba93-994b3b35ff8e",
+          "text": "Meine Hobbies sind Musik hören, Gitarre spielen, Fußball spielen und Lesen.",
+          "rightChoice": true
+        },
+        {
+          "id": "4de2ca01-c1f6-4a18-ba93-994b3b35ff8e",
+          "text": "Ich war schon in Amerika Tschechien, England und Italien",
+          "rightChoice": false
+        }
+      ],
+      "hint": "Achte darauf, dass zwischen den Aufzählungen ein Komma gesetzt wird, außer vor 'und' oder 'oder'."
+    },
+    {
+      "id": "2d98e0b2-890a-455c-ab3c-4416d64ddabe",
+      "type": 0,
+      "title": "Es gibt nur eine richtige Antwort...",
+      "choices": [
+        {
+          "id": "55b97f8f-f9eb-4d4f-ae75-746048118a77",
+          "text": "Ja, ich würde jetzt gerne Schlafen.",
+          "rightChoice": true
+        },
+        {
+          "id": "2a3a05be-3808-4d23-be14-b2b656a6b7ca",
+          "text": "Nein ich würde jetzt lieber im Unterricht aufpassen.",
+          "rightChoice": false
+        }
+      ],
+      "hint": ""
+    },
+    {
+      "id": "437a043c-89bd-4897-bf37-231455e78571",
+      "type": 0,
+      "title": "Es gibt nur eine richtige Antwort...",
+      "choices": [
+        {
+          "id": "9bf71e9c-5460-48f7-94dc-d962803f1fd5",
+          "text": "Das solltest du so aber nicht beantworten, Tobias.",
+          "rightChoice": true
+        },
+        {
+          "id": "a6bd3472-f3e8-4d1e-807a-887591d49fcb",
+          "text": "Das solltest du so aber nicht beantworten Tobias",
+          "rightChoice": false
+        }
+      ],
+      "hint": ""
+    },
+    {
+      "id": "30bc9733-1adf-453e-9166-4fb01cebdfbb",
+      "type": 0,
+      "title": "Es gibt nur eine richtige Antwort...",
+      "choices": [
+        {
+          "id": "ff4dac5b-8cb8-46ec-b0a4-1d912a14efcb",
+          "text": "Das war wieder eine tolle Stunde mit Herrn Tiedemann",
+          "rightChoice": true
+        },
+        {
+          "id": "ed20569d-e760-4351-923e-48a2267f6ef6",
+          "text": "Das war wieder eine tolle Stunde mit, Herrn Tiedemann",
+          "rightChoice": false
+        }
+      ],
+      "hint": ""
+    },
+    {
+      "id": "f3a36b4b-d9d3-4fa3-91d7-4d8f5c744071",
+      "type": 0,
+      "title": "Kommasetzung bei Infinitivgruppen",
+      "choices": [
+        {
+          "id": "7f416b6d-1dab-46f8-b1a7-bb6c30be5243",
+          "text": "Ich möchte dir helfen das Projekt voranzutreiben und deinen Ideen Form zu geben.",
+          "rightChoice": false
+        },
+        {
+          "id": "ab697b6a-07f8-46c1-b69d-65e3e3b8fca9",
+          "text": "Ich möchte dir helfen, das Projekt voranzutreiben und deinen Ideen Form zu geben.",
+          "rightChoice": true
+        },
+        {
+          "id": "b3ce15f8-4485-4e79-80cb-1bc8c1a9b146",
+          "text": "Ich möchte dir helfen, das Projekt voranzutreiben, und deinen Ideen Form zu geben.",
+          "rightChoice": false
+        }
+      ],
+      "hint": "Infinitivgruppen sollten durch ein Komma abgetrennt werden."
+    },
+    {
+      "id": "88868391-7a64-461c-bb2f-bb3ba7419184",
+      "type": 0,
+      "title": "Kommasetzung bei Infinitivgruppen",
+      "choices": [
+        {
+          "id": "b16a61d2-1a99-4cf0-bd11-7e8db36e16ab",
+          "text": "Zu shoppen,  macht ihm großen Spaß",
+          "rightChoice": false
+        },
+        {
+          "id": "1cf39d25-fb62-4c7c-931d-03d7d8bdf1b9",
+          "text": "Zu shoppen,  macht ihm großen Spaß",
+          "rightChoice": true
+        }
+      ],
+      "hint": "Infinitivgruppen sollten durch ein Komma abgetrennt werden."
+    },
+    {
+      "id": "9ea0a087-fe2e-4bac-affe-ec996ea51661",
+      "type": 1,
+      "title": "Kommasetzung bei Infinitivgruppen",
+      "choices": [
+        {
+          "id": "fd1f6b80-3549-4a0c-9e77-36f387712c8d",
+          "text": "Er hat vor kurzem angefangen Gitarre zu spielen und Tennis spielen zu lernen.",
+          "rightChoice": false
+        },
+        {
+          "id": "0321e225-85df-4d3b-9504-0564d791f8d4",
+          "text": "Er hat, vor kurzem angefangen, Gitarre zu spielen, und Tennis spielen zu lernen.",
+          "rightChoice": false
+        },
+        {
+          "id": "142e7db9-86d6-4d38-bdce-5d14cc678f87",
+          "text": "Sie gab ihm den Auftrag, das Essen vorzubereiten",
+          "rightChoice": true
+        },
+        {
+          "id": "4404c49e-c893-491f-831a-20dd87c7a43c",
+          "text": "Er machte alles, um eine gute Note zu erhalten.",
+          "rightChoice": true
+        },
+        {
+          "id": "0321e225-85df-4d3b-9504-0564d791f8d4",
+          "text": "Sie gab ihm den Auftrag das Essen vorzubereiten",
+          "rightChoice": false
+        },
+        {
+          "id": "b874f3d5-ba81-4f86-b07d-fee73e32af17",
+          "text": "Ich freue mich schon darauf zu lernen",
+          "rightChoice": false
+        }
+      ],
+      "hint": ""
+    },
+    {
+      "id": "fa465d18-a5c7-4676-ab42-5e45632ec92e",
+      "type": 0,
+      "title": "Kommasetzung bei Satzverbindungen",
+      "choices": [
+        {
+          "id": "454110e0-0714-4802-9342-2cab03caae19",
+          "text": "Ich koche gerne, aber, ich mag das Abwaschen nicht.",
+          "rightChoice": false
+        },
+        {
+          "id": "12a07939-95ab-407b-a192-9d625fe57e47",
+          "text": "Ich koche gerne aber ich mag das Abwaschen nicht.",
+          "rightChoice": false
+        },
+        {
+          "id": "6bf8eb15-ddd7-445b-8fc5-51cdd2b62ba4",
+          "text": "Ich koche gerne, aber ich mag das Abwaschen nicht.",
+          "rightChoice": true
+        }
+      ],
+      "hint": ""
+    },
+    {
+      "id": "87885b9b-7c19-4f81-8a7a-6711e5eddd3c",
+      "type": 0,
+      "title": "Kommasetzung bei Satzverbindungen",
+      "choices": [
+        {
+          "id": "5d07fd50-39c9-40a1-99b5-d308fff279de",
+          "text": "Wir haben heute schon Tennis gespielt und werden später noch schwimmen gehen.",
+          "rightChoice": true
+        },
+        {
+          "id": "3dcfae1a-485c-4f6b-b479-bd92d6849acc",
+          "text": "Wir haben heute schon Tennis gespielt, und werden später noch schwimmen gehen.",
+          "rightChoice": false
+        },
+        {
+          "id": "ee63090b-2a0d-4f93-85bc-48a4e2b3a7ef",
+          "text": "Wir haben heute schon Tennis gespielt und, werden später noch schwimmen gehen.",
+          "rightChoice": false
+        }
+      ],
+      "hint": ""
+    },
+    {
+      "id": "f77f0aa6-fc1a-49ca-866a-972f04c32237",
+      "type": 1,
+      "title": "Kommasetzung bei Satzverbindungen",
+      "choices": [
+        {
+          "id": "efecc043-593e-49a7-8d04-1e59a14c0466",
+          "text": "Ich muss noch einkaufen, deshalb komme ich später vorbei.",
+          "rightChoice": true
+        },
+        {
+          "id": "3d2a4c8b-7f30-459d-81de-339d2de2009d",
+          "text": "Ich muss noch einkaufen, und deshalb komme ich später vorbei.",
+          "rightChoice": false
+        },
+        {
+          "id": "db97b7fd-1dd0-47d7-9068-1e14905d2149",
+          "text": "Ich muss noch einkaufen deshalb, komme ich später vorbei.",
+          "rightChoice": false
+        },
+        {
+          "id": "221f317d-5cdb-4547-a9ca-07348ab4993e",
+          "text": "Ich muss noch einkaufen und deshalb, komme ich später vorbei.",
+          "rightChoice": false
+        }
+      ],
+      "hint": ""
+    },
+    {
+      "id": "fa9e72ec-c6b7-4cbf-8a0c-1121653bc146",
+      "type": 1,
+      "title": "Kommasetzung bei Satzverbindungen",
+      "choices": [
+        {
+          "id": "832c3d8c-c3c5-4526-b868-7e96be375318",
+          "text": "Ich habe die Hausaufgaben gemacht und, dann, bin ich ins Bett gegangen.",
+          "rightChoice": false
+        },
+        {
+          "id": "b936aff4-7338-4e04-8cd5-a76987356919",
+          "text": "Ich habe die Hausaufgaben gemacht und dann bin ich ins Bett gegangen.",
+          "rightChoice": true
+        },
+        {
+          "id": "5a878545-1c4f-4d7f-9549-6b3314fedf1f",
+          "text": "Ich, habe die Hausaufgaben gemacht und dann bin ich ins Bett gegangen.",
+          "rightChoice": false
+        },
+        {
+          "id": "0f76a9e6-e2f6-4838-b279-b12709e28dd8",
+          "text": "Ich habe die Hausaufgaben gemacht und dann, bin ich ins Bett gegangen.",
+          "rightChoice": false
+        }
+      ]
+    },
+    {
+      "id": "73502496-1bf2-4867-b70a-67299e7354ea",
+      "type": 1,
+      "title": "Kommasetzung bei Satzverbindungen",
+      "choices": [
+        {
+          "id": "ee851d2c-4ca2-422e-b6ef-31185cfc79e9",
+          "text": "Sabine kann besser kochen als ich dachte",
+          "rightChoice": false
+        },
+        {
+          "id": "1955a6c5-127d-4d90-ac03-440336a5b8b0",
+          "text": "Wir haben uns verlaufen aber zum Glück haben wir ein GPS-Gerät dabei.",
+          "rightChoice": false
+        },
+        {
+          "id": "f5463bc3-4ce4-4314-9a86-dca0e3f19c42",
+          "text": "An der Straße steht ein Haus, das groß ist.",
+          "rightChoice": true
+        },
+        {
+          "id": "3c3a3cde-b58f-4a13-beee-4c0225ff2ec5",
+          "text": "Ich liebe Pizza, ich mag aber auch Nudeln.",
+          "rightChoice": true
+        }
+      ]
+    }
+  ]
+}
