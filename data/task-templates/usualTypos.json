@@ -1,0 +1,168 @@
+{
+    "taskTitle": "Thema Häufige Rechtschreibfehler",
+    "taskDescription": "Fülle die folgenden Lückentexte mit den korrekt geschriebenen Wörtern aus!",
+    "tasks": [
+        {
+            "id": "75efdbd9-02fb-4b7b-9c99-e55d60faaa31",
+            "title": "Text 1",
+            "gaps": "In {{1}}(Deutschland, Equator) ist es kälter als am {{2}}(Deutschland, Equator)",
+            "type": 2,
+            "choices": [
+                {
+                    "1": "Deutschland"
+                },
+                {
+                    "2": "Equator"
+                }
+            ],
+            "hint": "Deutschland ist immer kalt"
+        },
+        {
+            "id": "e1192072-cd36-478b-9fc9-f772d75c422f",
+            "title": "Text 2",
+            "type": 2,
+            "gaps": "Ich habe {{1}} (wieder, wider) vergessen, das {{2}} (Geschirr, Geschir) zu {{3}} (Spülen, Spühlen) und mein Partner hatte {{4}} (wieder, wider) Erwarten keine Lust, es für mich zu tun. Ich merkte, dass ich einen {{5}} (Rhythmus, Rytmus, Rythmus) im Vergessen des {{6}} (Spülens, Spühlens) hatte und beschloss, diesen zu ändern. Ich suchte im Internet nach {{7}} (Tips, Tipps), wie man sich daran erinnern kann, das {{8}} (Geschirr, Geschir) zu spülen und fand ein {{9}} (Verzeichniss, Verzeichnis) {{10}} (unentgeldlicher, unentgeltlicher) Erinnerungs-Apps. Ich entschied mich für eine davon und stellte sie als {{11}} (Standart, Standard) auf meinem Handy ein. Seitdem habe ich nicht mehr vergessen, das {{12}} (Geschir, Geschirr) zu spülen und mein Partner ist auch glücklicher.",
+            "choices": [
+                {
+                    "1": "wieder"
+                },
+                {
+                    "2": "Geschirr"
+                },
+                {
+                    "3": "Spülen"
+                },
+                {
+                    "4": "wider"
+                },
+                {
+                    "5": "Rhythmus"
+                },
+                {
+                    "6": "Spülens"
+                },
+                {
+                    "7": "Tipps"
+                },
+                {
+                    "8": "Geschirr"
+                },
+                {
+                    "9": "Verzeichnis"
+                },
+                {
+                    "10": "unentgeltlicher"
+                },
+                {
+                    "11": "Standard"
+                },
+                {
+                    "12": "Geschirr"
+                }
+            ],
+            "hint": ""
+        },
+        {
+            "id": "06786e0c-7054-4760-a127-d254cf104ae5",
+            "title": "Text 3",
+            "type": 2,
+            "gaps": "Ich war auf einer Reise in Lappland und sah das erste Mal ein {{1}} (Rentier, Rehntier) in der {{2}} (Wildniss, Wildnis). Ich war so beeindruckt von seiner Schönheit und Anmut, dass ich beschloss, ein {{3}} (Souvenir, Souvenier) zu kaufen. Ich suchte in den Geschäften nach einem {{4}} (Portmané, Portemonnaie) aus {{5}} (Rehntierleder, Rentierleder), aber es war schwierig eines zu finden. Als ich es bezahlen wollte, merkte ich, dass ich mein {{6}} (Portmané, Portemonnaie) {{7}} (zu Hause, Zuhause) gelassen hatte. Ich war so enttäuscht, dass ich beschloss, die {{8}} (Strassenseite, Straßenseite) zu wechseln und mich auf den Musiker zu konzentrieren.",
+            "choices": [
+                {
+                    "1": "Rentier"
+                },
+                {
+                    "2": "Wildnis"
+                },
+                {
+                    "3": "Souvenir"
+                },
+                {
+                    "4": "Portemonnaie"
+                },
+                {
+                    "5": "Rentierleder"
+                },
+                {
+                    "6": "Portemonnaie"
+                },
+                {
+                    "7": "zu Hause"
+                },
+                {
+                    "8": "Straßenseite"
+                }
+            ],
+            "hint": ""
+        },
+        {
+            "id": "ae7fe7fb-9a90-49b7-ae89-a53773f0157b",
+            "title": "Text 3 3/4",
+            "type": 2,
+            "gaps": "Ich besuchte ein Konzert, bei dem ein Musiker auf einer {{1}} (Saiten, Seiten) einer Harfe spielte und die {{2}} (Silhouette, Silouette) des Musikers vor dem Nordlicht war unbeschreiblich schön. Ich beschloss, diesen Moment als mein {{3}} (Silvestergeschenk, Sylvestergeschenk) zu betrachten und ging glücklich zurück nach Hause. ",
+            "choices": [
+                {
+                    "1": "Saiten"
+                },
+                {
+                    "2": "Silhouette"
+                },
+                {
+                    "3": "Silvestergeschenk"
+                }
+            ],
+            "hint": ""
+        },
+        {
+            "id": "c494bd41-6a0e-4511-b934-aa6c89ae23ee",
+            "title": "Text 4",
+            "type": 2,
+            "gaps": "Wir schreiben das Jahr 1350. Es existieren mehrere {{1}} (Parraleluniversen, Paralleluniversen), in denen alles Mögliche passieren konnte. Ich war ein Ritter auf einer Mission, um ein {{2}} (Skuriles, Skurriles) Monster zu besiegen, das die Umgebung terrorisierte. Ich hatte gehört, dass es unbesiegbar war, aber {{3}} (Nichts desto trotz, Nichtsdestotrotz) war ich entschlossen, es zu besiegen. Ich ritt auf meinem Pferd und erreichte das Dorf, in dem das Monster sein Unwesen trieb. Ich sah die {{4}} (Misere, Miesere), die es verursacht hatte und war entschlossen, es zu besiegen. Ich traf mich mit den Bewohnern des Dorfes und stellte fest, dass ich {{5}} (Konkurenz, Konkurrenz) hatte, da andere Ritter auch Interesse an der Jagd auf das Monster hatten. Ich ritt los, um das Monster zu suchen und es dauerte nicht lange, bis ich es sah. Es war ein riesiges Ungeheuer, aber ich hatte keine Angst. Ich {{6}} (Galoppierte, Galopierte) auf meinem Pferd auf es zu und kämpfte tapfer. Nach einem langen und harten Kampf konnte ich es schließlich besiegen. Die Bewohner des Dorfes dankten mir und ich war stolz darauf, meine Mission erfolgreich abgeschlossen zu haben. Ich kehrte als Held zurück in mein Schloss.",
+            "choices": [
+                {
+                    "1": "Paralleluniversen"
+                },
+                {
+                    "2": "Skurriles"
+                },
+                {
+                    "3": "Nichtsdestotrotz"
+                },
+                {
+                    "4": "Misere"
+                },
+                {
+                    "5": "Konkurrenz"
+                },
+                {
+                    "6": "Galoppierte"
+                }
+            ],
+            "hint": ""
+        },
+        {
+            "id": "0819a759-a231-43ec-b1d4-0693c4007c1c",
+            "title": "Text 5",
+            "type": 2,
+            "gaps": "Ich bin ein Schüler von Hogwarts und habe gerade mein erstes Jahr abgeschlossen. Ich bereite mich auf die Zauberkunstklasse vor und präsentiere einen Zaubertrick, bei dem ich eine {{1}} (Zuchini, Zucchini) in eine {{2}} (Atrappe, Attrappe) verwandeln werde. Ich übe den Zauber \"{{3}}\" (Abrakadabra, Abra Kadabra) und präsentiere den Trick erfolgreich vor der Klasse, wodurch ich Lob von Professor Flitwick und meinen Mitschülern erhalte. Ein anderer Schüler, ein {{4}} (Hasadeur, Hasardeur) namens Draco, behauptet, er hätte den gleichen Trick schon vor Jahren gemacht, aber ich ignoriere ihn und genieße den {{5}} (Applaus, Aplaus). Ich bin stolz darauf, meine Fähigkeiten in der Zauberkunst gezeigt zu haben und freue mich darauf, weitere Tricks zu präsentieren. ",
+            "choices": [
+                {
+                    "1": "Zucchini"
+                },
+                {
+                    "2": "Attrappe"
+                },
+                {
+                    "3": "Abrakadabra"
+                },
+                {
+                    "4": "Hasardeur"
+                },
+                {
+                    "5": "Applaus"
+                }
+            ],
+            "hint": ""
+        }
+    ]
+}
