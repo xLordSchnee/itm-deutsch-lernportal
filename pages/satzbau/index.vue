@@ -98,7 +98,7 @@ import MultipleChoice from "../../components/exercise/multiple-choice";
 import GapText from "../../components/exercise/gap-text";
 import ExternalLink from "../../components/exercise/external-link";
 
-import Exercise from "../../data/task-templates/dasDass.json"
+import Exercise from "../../data/task-templates/Aufgaben_Satzbau.json"
 
 const showTasks = ref(false);
 const loading = ref(true);

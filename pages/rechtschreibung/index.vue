@@ -100,7 +100,7 @@ import ExternalLink from "../../components/exercise/external-link";
 
 import Exercise from "../../data/task-templates/Aufgaben_Rechtschreibung.json"
 
-const showTasks = ref(false);
+const showTasks = ref(true);
 const loading = ref(true);
 const allTaskCompleted = ref(false);
 const page = ref(Exercise.tasks.length);
