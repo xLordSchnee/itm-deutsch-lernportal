@@ -108,7 +108,7 @@ const resultText = ref('');
 const error = ref(false);
 const errorMessage = ref("");
 const externalLinks = ref([
-  { title: "Kommasetzung Video", url: "https://bwvkrborde-my.sharepoint.com/:w:/g/personal/spic127140_students_bwv-ahaus_de/EaeGZD94lRZPrWZhFLLfYo4BMfw8QG8xxak4JsufrkCUEg?e=xWFK30" }
+  { title: "Wichtige Informationen", url: "https://bwvkrborde-my.sharepoint.com/:w:/g/personal/spic127140_students_bwv-ahaus_de/EaeGZD94lRZPrWZhFLLfYo4BMfw8QG8xxak4JsufrkCUEg?e=xWFK30" }
 ])
 
 
