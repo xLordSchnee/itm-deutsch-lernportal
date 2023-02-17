@@ -100,7 +100,7 @@ import ExternalLink from "../../components/exercise/external-link";
 
 import Exercise from "../../data/task-templates/Konjunktiv.json"
 
-const showTasks = ref(true);
+const showTasks = ref(false);
 const loading = ref(true);
 const allTaskCompleted = ref(false);
 const page = ref(Exercise.tasks.length);
@@ -110,6 +110,7 @@ const resultText = ref('');
 const error = ref(false);
 const errorMessage = ref("");
 const externalLinks = ref([
+  { title: "Konjunktiv Video", url: "https://videos.simpleshow.com/GY3jcSXxjx" }
 ])
 
 

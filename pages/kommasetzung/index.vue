@@ -100,7 +100,7 @@ import ExternalLink from "../../components/exercise/external-link";
 
 import Exercise from "../../data/task-templates/Aufgaben_Kommasetzung.json"
 
-const showTasks = ref(true);
+const showTasks = ref(false);
 const loading = ref(true);
 const allTaskCompleted = ref(false);
 const page = ref(Exercise.tasks.length);
@@ -110,6 +110,7 @@ const resultText = ref('');
 const error = ref(false);
 const errorMessage = ref("");
 const externalLinks = ref([
+  { title: "Kommasetzung Video", url: "https://bwvkrborde-my.sharepoint.com/:w:/g/personal/spic127140_students_bwv-ahaus_de/EaeGZD94lRZPrWZhFLLfYo4BMfw8QG8xxak4JsufrkCUEg?e=xWFK30" }
 ])
 
 

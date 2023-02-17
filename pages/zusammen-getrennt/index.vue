@@ -15,8 +15,8 @@
 
     <v-container class="mx-auto" style="width: auto">
       <v-card v-if="!showTasks">
-        <v-card-title>
-          <h2>{{ Exercise.taskTitle }}</h2>
+        <v-card-title class="headline">
+          {{ Exercise.taskTitle }}
         </v-card-title>
         <v-card-text>
           <h3>{{ Exercise.taskDescription }}</h3>
@@ -38,8 +38,8 @@
         </v-card-text>
       </v-card>
       <v-card v-else>
-        <v-card-title>
-          <h1>{{ Exercise.taskTitle }}</h1>
+        <v-card-title class="headline">
+          {{ Exercise.taskTitle }}
         </v-card-title>
         <v-card-text>
           <h3>{{ Exercise.taskDescription }}</h3>

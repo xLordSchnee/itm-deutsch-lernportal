@@ -100,7 +100,7 @@ import ExternalLink from "../../components/exercise/external-link";
 
 import Exercise from "../../data/task-templates/Autgaben_Konjunktion.json"
 
-const showTasks = ref(true);
+const showTasks = ref(false);
 const loading = ref(true);
 const allTaskCompleted = ref(false);
 const page = ref(Exercise.tasks.length);
@@ -110,6 +110,7 @@ const resultText = ref('');
 const error = ref(false);
 const errorMessage = ref("");
 const externalLinks = ref([
+  { title: "Konjunktionen Video", url: "https://designs.ai/videomaker/start/public/68e4e003-28cf-4c57-8988-46d91a687676" }
 ])
 
 
