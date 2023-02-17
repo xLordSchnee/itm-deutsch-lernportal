@@ -108,7 +108,7 @@ const resultText = ref('');
 const error = ref(false);
 const errorMessage = ref("");
 const externalLinks = ref([
-  { title: "Video Infinitiv", url: "https://bwvkrborde-my.sharepoint.com/personal/menk132860_students_bwv-ahaus_de/_layouts/15/stream.aspx?id=%2Fpersonal%2Fmenk132860%5Fstudents%5Fbwv%2Dahaus%5Fde%2FDocuments%2Fsimpleshow%5Fdeutsch%2Emp4&ct=1676625636109&or=Teams-HL&ga=1" }
+  { title: "Video Infinitiv", url: "https://bwvkrborde-my.sharepoint.com/:v:/g/personal/menk132860_students_bwv-ahaus_de/EVq5S3I9PkFOtXy0dvjfwwwBnqF5RPa91bVWa9jp-zlAqg?e=cfAqSq" }
 ])
 
 
